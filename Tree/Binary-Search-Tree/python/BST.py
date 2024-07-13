@@ -36,9 +36,9 @@ class BST:
       if not node:
         return False
       elif num > node.num:
-        return helper(node.right)
+        return helper(node.right, num)
       elif num < node.num:
-        return helper(node.left)
+        return helper(node.left, num)
       else:
         return True
     return helper(self.root, num)
@@ -55,6 +55,6 @@ class BST:
       helper(node.left)
       helper(node.right)
       return
+      
     helper(self.root)
     return res
-

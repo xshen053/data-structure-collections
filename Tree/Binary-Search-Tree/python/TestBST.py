@@ -2,7 +2,6 @@ import unittest
 from BST import BST
 
 class TestBST(unittest.TestCase):
-
     def setUp(self):
       self.bst = BST()
 
@@ -17,8 +16,12 @@ class TestBST(unittest.TestCase):
       self.assertFalse(self.bst.search(5))
       self.bst.insert(5)
       self.assertTrue(self.bst.search(5))
-       
+      self.assertFalse(self.bst.search(6))
+      self.bst.insert(6)
+      self.assertTrue(self.bst.search(6))
 
+
+       
     def test_preorderTraversal(self):
         self.bst.insert(5)
         self.bst.insert(3)
