@@ -20,7 +20,8 @@ This repo includes various common abstract data structures (ADT) and their imple
 - Queue
 - Tree
   - Binary Search Tree
-  - AVL Tree / Red-Black Tree
+  - AVL Tree
+  - Red-Black Tree
 - Map
   - Hash Map
   - Tree Map
