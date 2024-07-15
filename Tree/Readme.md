@@ -44,10 +44,26 @@ File System:
 a good video given by inventor of red-black tree:  
 https://www.coursera.org/lecture/algorithms-part1/red-black-bsts-GZe13
 
+cs61b lab8:LLRB
+https://fa23.datastructur.es/materials/lab/lab08/
+
 ### Invariants
 > Actually we just do the same insertion as how we do in BST, but we also need to make sure it meets `LLRB properties`
 
-Where do we get these invariants?
+> Where do we get these invariants?
+we derive these operations based on the fact that there is a one-to-one correspondence of valid LLRB to 2-3 trees
+
+Invariants:  
+- If a node has one red child, it must be on the left #
+- No node can have two red children
+- No red node can have a red parent (every red node’s parent is black)
+  - Two consecutive left-leaning red nodes.
+  - Red node with a right-leaning red child/node
+
+
+
+
+
 
 
 
@@ -56,3 +72,12 @@ Where do we get these invariants?
 File System:
 - EXT
 
+### Operations to keep balance
+
+- rotateLeft(G)
+  - Let x be the right child of G. Make G the new left child of x.
+  - Can think of as temporarily merging G and P, then sending G down and left.
+  - ![alt text](./imgs/rotateLeft.png)
+- rotateRight(P)
+  - Let x be the left child of P. Make P the new right child of x.
+  - ![alt text](./imgs/rotateRight.png)
