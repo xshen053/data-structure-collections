@@ -38,9 +38,16 @@ File System:
 - BTRFS
 
 
-
 ## 4. Red-Black Tree
 > B-Tree is good, but it's hard to implement, so that's why we have red-black tree
+
+a good video given by inventor of red-black tree:  
+https://www.coursera.org/lecture/algorithms-part1/red-black-bsts-GZe13
+
+### Invariants
+> Actually we just do the same insertion as how we do in BST, but we also need to make sure it meets `LLRB properties`
+
+Where do we get these invariants?
 
 
 
