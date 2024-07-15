@@ -81,3 +81,10 @@ File System:
 - rotateRight(P)
   - Let x be the left child of P. Make P the new right child of x.
   - ![alt text](./imgs/rotateRight.png)
+
+
+# References
+
+This repo makes use of slides from the CS61B course. Special thanks to the authors and instructors for providing these valuable resources.
+
+- CS61B: Data Structures, by Josh Hug. Available at: [CS61B Course Materials](https://fa23.datastructur.es/)
