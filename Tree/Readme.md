@@ -51,17 +51,18 @@ File System:
 > Where do we get these invariants?
 we derive these operations based on the fact that there is a one-to-one correspondence of valid LLRB to 2-3 trees
 
+> why the new inserted node is red?
+
+In 2-3 trees new values are ALWAYS added to a leaf node (at first). [cs61b fa23 lec18 slide49](https://docs.google.com/presentation/d/1GP_5y1hpfF7SfUz4rfwcP7uXIYZ4cNRREFyz6IDfWhg/edit?pli=1#slide=id.g5240c8ba42_0_564)
+
+
+
 Invariants:  
 - If a node has one red child, it must be on the left
 - No node can have two red children
 - No red node can have a red parent (every red node’s parent is black)
   - Two consecutive left-leaning red nodes.
   - Red node with a right-leaning red child/node
-
-
-
-
-
 
 
 
@@ -81,9 +82,11 @@ File System:
 - rotateLeft(G)
   - Let x be the right child of G. Make G the new left child of x.
   - Can think of as temporarily merging G and P, then sending G down and left.
+  - **new node's left child now becomes the right child of old node** see `node k` here
   - ![alt text](./imgs/rotateLeft.png)
 - rotateRight(P)
   - Let x be the left child of P. Make P the new right child of x.
+  - **new node(G)'s right child(k) now becomes the left child of old node(P)** see `node k` here
   - ![alt text](./imgs/rotateRight.png)
 
 #### Color Flip
