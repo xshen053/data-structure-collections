@@ -58,12 +58,12 @@ In 2-3 trees new values are ALWAYS added to a leaf node (at first). [cs61b fa23 
 
 
 Invariants:  
+- Root node is black
 - If a node has one red child, it must be on the left
 - No node can have two red children
 - No red node can have a red parent (every red node’s parent is black)
   - Two consecutive left-leaning red nodes.
   - Red node with a right-leaning red child/node
-
 
 
 > real-world usage
@@ -82,15 +82,17 @@ File System:
 - rotateLeft(G)
   - Let x be the right child of G. Make G the new left child of x.
   - Can think of as temporarily merging G and P, then sending G down and left.
+  - The two nodes **swap** colors so that the new root is the same color as the old root.
   - **new node's left child now becomes the right child of old node** see `node k` here
   - ![alt text](./imgs/rotateLeft.png)
 - rotateRight(P)
   - Let x be the left child of P. Make P the new right child of x.
+  - The two nodes **swap** colors so that the new root is the same color as the old root.  
   - **new node(G)'s right child(k) now becomes the left child of old node(P)** see `node k` here
   - ![alt text](./imgs/rotateRight.png)
 
 #### Color Flip
-
+- flip colors or node and its 2 children
 
 
 #### Videos
@@ -101,6 +103,14 @@ https://www.coursera.org/lecture/algorithms-part1/red-black-bsts-GZe13
 cs61b lab8:LLRB  
 https://fa23.datastructur.es/materials/lab/lab08/
 
+#### Summary
+- when doing insertion, we need to make sure the subtree rooted as current tree doesn't violate LLRB invariant
+- We have 3 tools to help us
+  - rotateLeft
+  - rotateRight
+  - flipColors
+
+*That's it*
 
 
 # References
