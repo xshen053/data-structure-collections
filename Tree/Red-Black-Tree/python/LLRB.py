@@ -39,13 +39,25 @@ class LLRB:
     newRoot.isBlack, node.isBlack = node.isBlack, newRoot.isBlack
     return newRoot
   
+  def search(self, item):
+    """
+    @return True if item exists in the tree, otherwise, False
+    """
+    def helper(node, item):
+      if not node:
+        return False
+      elif item > node.item:
+        return helper(node.right, item)
+      elif item < node.item:
+        return helper(node.left, item)
+      else:
+        return True
+    return helper(self.root, item)
+
   def insert(self, item):   
     self.root = self.__insert(self.root, item)
     self.root.isBlack = True
     return self.root
-
-
-    
 
   def isRed(self, node):
     return node is not None and node.isBlack == False

@@ -1,35 +1,18 @@
 import unittest
 from LLRB import LLRB
 
-# class TestLLRBBstProperty(unittest.TestCase):
-#     def setUp(self):
-#       self.llrb = LLRB()
+class TestLLRBBstProperty(unittest.TestCase):
+    def setUp(self):
+      self.llrb = LLRB()
 
-#     def test_insert(self):
-#       self.assertEqual(self.llrb.insert(5), 1)
-#       self.assertEqual(self.llrb.insert(5), 2)
-#       self.assertEqual(self.llrb.insert(5), 3)
-#       self.assertEqual(self.llrb.insert(4), 1)
-#       self.assertEqual(self.llrb.insert(5), 4)
-
-#     def test_search(self):
-#       self.assertTrue(self.llrb.search(5))
-#       self.llrb.insert(5)
-#       self.assertTrue(self.llrb.search(5))
-#       self.assertTrue(self.llrb.search(6))
-#       self.llrb.insert(6)
-#       self.assertTrue(self.llrb.search(6))
+    def test_search(self):
+      self.assertFalse(self.llrb.search(5))
+      self.llrb.insert(5)
+      self.assertTrue(self.llrb.search(5))
+      self.assertFalse(self.llrb.search(6))
+      self.llrb.insert(6)
+      self.assertTrue(self.llrb.search(6))
   
-#     def test_preorderTraversal(self):
-#         self.llrb.insert(5)
-#         self.llrb.insert(3)
-#         self.llrb.insert(7)
-#         self.llrb.insert(2)
-#         self.llrb.insert(4)
-#         self.llrb.insert(6)
-#         self.llrb.insert(8)
-#         self.assertEqual(self.llrb.preorderTraversal(), [5, 3, 2, 4, 7, 6, 8])
-
 class TestLLRBInvariant(unittest.TestCase):
     def setUp(self):
       self.llrb = LLRB()
