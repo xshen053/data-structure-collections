@@ -1,5 +1,5 @@
 # Data-structure-collections
-This repo includes various common abstract data structures (ADT) and their implementation details using Java.
+This repo includes various common abstract data structures (ADT) and their implementation details using Java / Python.
 
 # Difference between abstract data type and data structure
 - ADT: Describes the operations and properties (e.g., each node's left subtree contains only nodes with keys less than the node's key).
