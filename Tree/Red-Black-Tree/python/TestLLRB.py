@@ -34,6 +34,60 @@ class TestLLRBInvariant(unittest.TestCase):
     def setUp(self):
       self.llrb = LLRB()
 
+    def test_insert_upward_propagation(self):
+      self.assertEqual(self.llrb.root, None)
+      self.llrb.insert(5)
+      self.llrb.insert(11)
+      self.llrb.insert(3)
+      self.llrb.insert(9)
+      self.llrb.insert(7)
+      self.llrb.insert(1)
+      self.llrb.insert(2)
+      """   
+      LLRB Tree Representation:
+          (5)
+          ├── (2)
+          │   ├── (1)
+          │   └── (3)
+          └── (9)
+              ├── (7)
+              └── (11)      
+      """
+      self.assertIsNotNone(self.llrb.root)
+      self.assertFalse(self.llrb.isRed(self.llrb.root))
+      self.assertEqual(self.llrb.root.item, 5)
+
+      # left
+      self.assertIsNotNone(self.llrb.root.left)
+      self.assertTrue(self.llrb.root.left.isBlack)
+      self.assertEqual(self.llrb.root.left.item, 2)
+
+      # left.left
+      self.assertIsNotNone(self.llrb.root.left.left)
+      self.assertTrue(self.llrb.root.left.left.isBlack)
+      self.assertEqual(self.llrb.root.left.left.item, 1)
+
+      # left.right
+      self.assertIsNotNone(self.llrb.root.left.right)
+      self.assertTrue(self.llrb.root.left.right.isBlack)
+      self.assertEqual(self.llrb.root.left.right.item, 3)
+
+      # right
+      self.assertIsNotNone(self.llrb.root.right)
+      self.assertTrue(self.llrb.root.right.isBlack)
+      self.assertEqual(self.llrb.root.right.item, 9)
+
+      # right.left
+      self.assertIsNotNone(self.llrb.root.right.left)
+      self.assertTrue(self.llrb.root.right.left.isBlack)
+      self.assertEqual(self.llrb.root.right.left.item, 7)
+
+      # right.right
+      self.assertIsNotNone(self.llrb.root.right.right)
+      self.assertTrue(self.llrb.root.right.right.isBlack)
+      self.assertEqual(self.llrb.root.right.right.item, 11)
+      
+
     def test_is_red(self):
       self.assertEqual(self.llrb.root, None)
       node1 = self.llrb.LLRBNode(True, 10)
@@ -104,6 +158,29 @@ class TestLLRBInvariant(unittest.TestCase):
       self.assertFalse(self.llrb.isRed(newRoot.left.right))
       self.assertFalse(self.llrb.isRed(newRoot.right))
 
+    def test_rotate_left_case3(self):
+      """
+          3
+        1(red)
+          2(red)
+        rotateLeft(1)
+            3
+          2(red)
+        1(red)
+      """
+
+      three = self.llrb.LLRBNode(True, 3)
+      two = self.llrb.LLRBNode(False, 2)
+      one = self.llrb.LLRBNode(False, 1)
+      three.left = one
+      one.right = two
+      
+      self.assertTrue(self.llrb.isRed(one))
+      self.assertTrue(self.llrb.isRed(two))      
+      self.llrb.rotateLeft(one)
+      self.assertTrue(self.llrb.isRed(one))
+      self.assertTrue(self.llrb.isRed(two))
+
     def test_rotate_right(self):
       """
               3
@@ -138,7 +215,6 @@ class TestLLRBInvariant(unittest.TestCase):
       self.assertTrue(self.llrb.isRed(newRoot.left))
       self.assertTrue(self.llrb.isRed(newRoot.right))
       self.assertFalse(self.llrb.isRed(newRoot.right.left))
-      
 
     def test_flip(self):
       """
