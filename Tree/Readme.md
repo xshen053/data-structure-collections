@@ -39,13 +39,11 @@ File System:
 
 
 ## 4. Red-Black Tree
-> B-Tree is good, but it's hard to implement, so that's why we have red-black tree
+> B-Tree is good, but it's hard to implement, so that's why we have red-black tree (LLRB)
 
-a good video given by inventor of red-black tree:  
-https://www.coursera.org/lecture/algorithms-part1/red-black-bsts-GZe13
+> LLRB in one sentence
 
-cs61b lab8:LLRB
-https://fa23.datastructur.es/materials/lab/lab08/
+- When we insert nodes, inserted nodes are red. By maintaining some properties (invariants) relevant to red and black, we achieve the goal that the tree is always balanced
 
 ### Invariants
 > Actually we just do the same insertion as how we do in BST, but we also need to make sure it meets `LLRB properties`
@@ -54,7 +52,7 @@ https://fa23.datastructur.es/materials/lab/lab08/
 we derive these operations based on the fact that there is a one-to-one correspondence of valid LLRB to 2-3 trees
 
 Invariants:  
-- If a node has one red child, it must be on the left #
+- If a node has one red child, it must be on the left
 - No node can have two red children
 - No red node can have a red parent (every red node’s parent is black)
   - Two consecutive left-leaning red nodes.
@@ -73,7 +71,13 @@ File System:
 - EXT
 
 ### Operations to keep balance
+> There are 2 kinds of operations we introduce here on the top of a binary search tree
 
+- rotation operation
+- color flip
+- Also we changed insert a little bit
+
+#### Rotation
 - rotateLeft(G)
   - Let x be the right child of G. Make G the new left child of x.
   - Can think of as temporarily merging G and P, then sending G down and left.
@@ -81,6 +85,19 @@ File System:
 - rotateRight(P)
   - Let x be the left child of P. Make P the new right child of x.
   - ![alt text](./imgs/rotateRight.png)
+
+#### Color Flip
+
+
+
+#### Videos
+
+a good video given by inventor of red-black tree:  
+https://www.coursera.org/lecture/algorithms-part1/red-black-bsts-GZe13
+
+cs61b lab8:LLRB  
+https://fa23.datastructur.es/materials/lab/lab08/
+
 
 
 # References
