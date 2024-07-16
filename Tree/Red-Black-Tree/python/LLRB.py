@@ -24,7 +24,7 @@ class LLRB:
     node.right = newRoot.left
     newRoot.left = node
     self.__flipColor(newRoot)
-    self.__flipColor(newRoot.left)
+    self.__flipColor(node)
     return newRoot
 
   def rotateRight(self, node) -> LLRBNode:
@@ -33,7 +33,12 @@ class LLRB:
     @return: root of new subtree after rotation
     no need to change its parent here
     """
-    pass  
+    newRoot = node.left
+    node.left = newRoot.right
+    newRoot.right = node
+    self.__flipColor(newRoot)
+    self.__flipColor(node)
+    return newRoot
   
   def insert(self, node):
     pass

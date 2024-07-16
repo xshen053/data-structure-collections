@@ -45,6 +45,19 @@ class TestLLRBInvariant(unittest.TestCase):
       self.assertTrue(self.llrb.isRed(node3))
 
     def test_rotate_left_case1(self):
+      """
+
+        9
+          \'\
+            10
+
+        leftRotate(9)
+        
+            10
+          /
+        9
+
+      """
       self.assertEqual(self.llrb.root, None)      
       node1 = self.llrb.LLRBNode(True, 9)
       node2 = self.llrb.LLRBNode(False, 10)
@@ -56,19 +69,102 @@ class TestLLRBInvariant(unittest.TestCase):
       self.assertFalse(self.llrb.isRed(newRoot))
       self.assertTrue(self.llrb.isRed(newRoot.left))
 
+    def test_rotate_left_case2(self):
+      """
+          2
+        1   4(red)
+          3   5
+      
+        leftRotate(2)
 
-    # def test_rotate_right(self):
-    #   self.assertEqual(self.llrb.root, None)      
-    #   node1 = self.llrb.LLRBNode(True, 10)
-    #   node2 = self.llrb.LLRBNode(False, 9)
-    #   node3 = self.llrb.LLRBNode(False, 8)
-    #   node1.left = node2
-    #   node1.right = node3
+                4
+          2(red)   5
+        1   3
 
-    #   newRoot = self.llrb.rotateRight(node1)
-    #   self.assertEqual(newRoot.item, 9)
-    #   self.assertEqual(newRoot.left.item, 8)
-    #   self.assertEqual(newRoot.right.item, 10)
+      """
+      two = self.llrb.LLRBNode(True, 2)
+      one = self.llrb.LLRBNode(True, 1)
+      four = self.llrb.LLRBNode(False, 4)
+      three = self.llrb.LLRBNode(True, 3)
+      five = self.llrb.LLRBNode(True, 5)
+      two.left = one
+      two.right = four
+      four.left = three
+      four.right = five
+      # rotate(2)
+      newRoot = self.llrb.rotateLeft(two)
+      self.assertEqual(newRoot.item, 4)      
+      self.assertEqual(newRoot.right.item, 5)      
+      self.assertEqual(newRoot.left.item, 2)      
+      self.assertEqual(newRoot.left.left.item, 1)      
+      self.assertEqual(newRoot.left.right.item, 3)      
+      self.assertTrue(self.llrb.isRed(newRoot.left))
+      self.assertFalse(self.llrb.isRed(newRoot))
+      self.assertFalse(self.llrb.isRed(newRoot.left.left))
+      self.assertFalse(self.llrb.isRed(newRoot.left.right))
+      self.assertFalse(self.llrb.isRed(newRoot.right))
+
+    def test_rotate_right(self):
+      """
+              3
+            /
+          2(red)
+        /    \'\
+        1(red)    4
+      
+        rotateRight(1)
+
+           2
+        /    \'\
+      1(red)    3(red)
+               /
+              4    
+      """
+      one = self.llrb.LLRBNode(False, 1)
+      two = self.llrb.LLRBNode(False, 2)
+      three = self.llrb.LLRBNode(True, 3)
+      four = self.llrb.LLRBNode(True, 4)
+      three.left = two
+      two.left = one
+      two.right = four
+      newRoot = self.llrb.rotateRight(three)
+      # check value
+      self.assertEqual(newRoot.item, 2)
+      self.assertEqual(newRoot.left.item, 1)
+      self.assertEqual(newRoot.right.item, 3)
+      self.assertEqual(newRoot.right.left.item, 4)
+      # check color
+      self.assertFalse(self.llrb.isRed(newRoot))
+      self.assertTrue(self.llrb.isRed(newRoot.left))
+      self.assertTrue(self.llrb.isRed(newRoot.right))
+      self.assertFalse(self.llrb.isRed(newRoot.right.left))
+      
+
+    def test_flip(self):
+      """
+            2
+          /   \'\
+        1(red)   4(red)
+
+        flipColors(2)
+
+            2(red)
+          /   \'\
+        1       4      
+      
+      """
+      two = self.llrb.LLRBNode(True, 2)
+      one = self.llrb.LLRBNode(False, 1)
+      four = self.llrb.LLRBNode(False, 4)
+      two.left = one
+      two.right = four
+      self.assertFalse(self.llrb.isRed(two))
+      self.assertTrue(self.llrb.isRed(one))
+      self.assertTrue(self.llrb.isRed(four))
+      self.llrb.flipColors(two)   
+      self.assertTrue(self.llrb.isRed(two))
+      self.assertFalse(self.llrb.isRed(one))
+      self.assertFalse(self.llrb.isRed(four))       
 
 if __name__ == '__main__':
     unittest.main()
