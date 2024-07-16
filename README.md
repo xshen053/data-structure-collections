@@ -5,7 +5,6 @@ This repo includes various common abstract data structures (ADT) and their imple
 - ADT: Describes the operations and properties (e.g., each node's left subtree contains only nodes with keys less than the node's key).
 - Data Structure: Only describe the structure (don't think about operations and properties),
   - e.g. binary tree is a structure where each node points to left and right children
- 
 
 ## Data structure
 - Array: a linear data structure - elements are stored at a contiguous location
@@ -17,7 +16,9 @@ This repo includes various common abstract data structures (ADT) and their imple
 ## Abstract Data Type
 - List
 - Stack
+  - Monotonic stack
 - Queue
+  - Monotonic queue
 - Tree
   - Binary Search Tree
   - AVL Tree
@@ -28,4 +29,3 @@ This repo includes various common abstract data structures (ADT) and their imple
 - Graph
 - Heaps and Priority Queue
 - Disjoint Sets
-
