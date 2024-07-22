@@ -60,15 +60,17 @@ class UnionFind:
     """
     r1 = self.find(v1)
     r2 = self.find(v2)
+    size1 = self.sizeOf(v1)
+    size2 = self.sizeOf(v2)
     if r1 != r2:
-      if self.sizeOf(v1) == self.sizeOf(v2):
+      if size1 == size2:
         self.data[r1] = r2
-      elif self.sizeOf(v1) > self.sizeOf(v2):
+      elif size1 > size2:
         self.data[r2] = r1
-        self.data[r1] -= r2
+        self.data[r1] -= size2
       else:
         self.data[r1] = r2
-        self.data[r2] -= r1
-        
+        self.data[r2] -= size1
+
   def print(self):
     print(self.data)
