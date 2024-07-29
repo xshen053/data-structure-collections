@@ -2,7 +2,7 @@
 
 ![BFS1](./imgs/bfs1.png)
 
-# Template1 (need to record distance)
+# Template1 (no need to record distance)
 > Using lc 690. Employee Importance to explain the idea
 
 ```Python
