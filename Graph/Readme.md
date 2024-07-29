@@ -21,14 +21,10 @@
 
 4. [References](#references)
 
-
-
 ## Common Graph Problems
 ![Graph Problems](./imgs/graphProblems2.png)
 
-
 ## Graph Representation
-
 
 Choices are made based on
 - Runtime
@@ -52,7 +48,6 @@ Choices are made based on
 ![Adjacency lists](./imgs/graph3.png)
 
 ## Shortest Paths
-
 
 ## Summary
 ![Summary](./imgs/lec23summary.png)

@@ -29,3 +29,10 @@ This repo includes various common abstract data structures (ADT) and their imple
 - Graph
 - Heaps and Priority Queue
 - Disjoint Sets
+
+## Algorithms
+- Sorting
+- Greedy
+- BFS
+- DFS
+- Dynamic Programming

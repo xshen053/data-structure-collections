@@ -1,3 +1,6 @@
+"""
+2024 @ Copyright Xiaxi Shen
+"""
 class UnionFind:
   def __init__(self, N):
     self.data = [-1] * N
@@ -7,7 +10,6 @@ class UnionFind:
     Returns the size of the set V belongs to
     """
     return -self.parent(self.find(v))
-    
 
   def parent(self, v):
     """
@@ -65,6 +67,7 @@ class UnionFind:
     if r1 != r2:
       if size1 == size2:
         self.data[r1] = r2
+        self.data[r2] -= size1
       elif size1 > size2:
         self.data[r2] = r1
         self.data[r1] -= size2
