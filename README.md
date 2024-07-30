@@ -52,6 +52,9 @@ BFS
 - [690. Employee Importance](https://leetcode.com/problems/employee-importance/description/)
 - [787. Cheapest Flights Within K Stops](https://leetcode.cn/problems/cheapest-flights-within-k-stops/)
 
+BFS (Many Sources)
+- [994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges/description/)
+
 
 DFS (String)
 - [139. Word Break](https://leetcode.com/problems/word-break/description/)
@@ -77,5 +80,16 @@ Priority Queue
 Sorting (Cycle Sort)
 - [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/)
 
+
+Sorting (Topological Sort)
+- [207. Course Schedule](https://leetcode.com/problems/course-schedule/description/)
+- [210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/)
+
+
+Sliding Window
+- [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/)
+- [30. Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/)
+- [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
+- [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/)
 
 
