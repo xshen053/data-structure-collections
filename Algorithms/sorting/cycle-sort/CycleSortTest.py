@@ -1,5 +1,5 @@
 import unittest
-from CycleSort import cyclesort
+from .CycleSortTest import cyclesort
 
 
 class TestCycleSort(unittest.TestCase):
