@@ -73,6 +73,13 @@ Backtracking
 - [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii/description/)
 
 Priority Queue
+
+- [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/description/)
+- [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
+- [295. Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/description/)
+- [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/)
+- [1642. Furthest Building You Can Reach](https://leetcode.com/problems/furthest-building-you-can-reach/description/)
+---
 - [373. Find K Pairs with Smallest Sums](https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/)
 - [378. Kth Smallest Element in a Sorted Matrix](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/description/)
 - [786. K-th Smallest Prime Fraction](https://leetcode.com/problems/k-th-smallest-prime-fraction/description/)
@@ -92,4 +99,7 @@ Sliding Window
 - [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)
 - [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/description/)
 
-
+Tree (LCA)
+- [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)
+- [1123. Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/)
+- [1257. Smallest Common Region](https://leetcode.com/problems/smallest-common-region/description/)
