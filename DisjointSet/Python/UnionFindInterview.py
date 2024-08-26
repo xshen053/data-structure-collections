@@ -3,10 +3,8 @@
 """
 class UnionFind:
   def __init__(self, N):
-    self.data = {}
-    for i in range(N):
-      self.data[i] = -1
-
+    self.data = {i: -1 for i in range(N)}
+    
   def sizeOf(self, v):
     """
     Returns the size of the set V belongs to
