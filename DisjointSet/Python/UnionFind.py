@@ -3,7 +3,7 @@
 """
 class UnionFind:
   def __init__(self, N):
-    self.data = [-1] * N
+    self.data = {i: -1 for i in range(N)}
 
   def sizeOf(self, v):
     """
@@ -44,7 +44,7 @@ class UnionFind:
     self.data[v] = self.find(self.data[v])
     # we finished path compression
     return self.data[v]
-    
+
     # Iteration way
     # if v < 0 or v >= len(self.data):
     #   raise ValueError("Please give an valid value")
@@ -83,7 +83,7 @@ class UnionFind:
         self.data[r1] -= size2
       else:
         self.data[r1] = r2
-        self.data[r2] -= size1
+        self.data[r2] -= size1      
 
   def print(self):
     print(self.data)
