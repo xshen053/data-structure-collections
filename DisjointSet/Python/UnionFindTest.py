@@ -27,7 +27,6 @@ class TestUnionFind(unittest.TestCase):
       self.assertTrue(self.uf.connected(1, 2))
       self.assertTrue(self.uf.connected(1, 3))
       self.assertTrue(self.uf.connected(2, 3))
-      self.uf.print()
 
     def test3(self):
       """

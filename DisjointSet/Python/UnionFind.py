@@ -36,20 +36,30 @@ class UnionFind:
     If invalid items are passed into this function, 
     throw an ValueError.
     """
-    if v < 0 or v >= len(self.data):
-      raise ValueError("Please give an valid value")
-    cur = v
-    while self.parent(cur) > 0:
-      cur = self.data[cur]
-    root = cur
+    # Recursive way
+    # v is root
+    if self.data[v] < 0:
+      return v
+    # v is not root
+    self.data[v] = self.find(self.data[v])
+    # we finished path compression
+    return self.data[v]
+    
+    # Iteration way
+    # if v < 0 or v >= len(self.data):
+    #   raise ValueError("Please give an valid value")
+    # cur = v
+    # while self.parent(cur) > 0:
+    #   cur = self.data[cur]
+    # root = cur
 
-    # Path Compression
-    cur = v
-    while self.parent(cur) > 0:
-      temp = self.data[cur]
-      self.data[cur] = root
-      cur = temp
-    return root
+    # # Path Compression
+    # cur = v
+    # while self.parent(cur) > 0:
+    #   temp = self.data[cur]
+    #   self.data[cur] = root
+    #   cur = temp
+    # return root
 
   def union(self, v1, v2):
     """
