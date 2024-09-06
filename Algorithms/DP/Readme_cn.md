@@ -3,9 +3,10 @@
 
 所有dp问题的特点是，都有最优子结构。
 
-当我们发现一个问题有1最优子结构之后，一棵树就在我们脑海中显现出来了。而我们可以先忽略记忆化，尝试用recursion来解决它。写出recursion的前提，我们只需要考虑2件事
-boundary
-general recurrence
+当我们发现一个问题有1最优子结构之后，一棵树就在我们脑海中显现出来了。而我们可以先忽略记忆化，尝试用recursion来解决它。写出recursion的前提，我们只需要考虑
+- optimal substructure
+- boundary
+- general recurrence
 
 思考完了之后，这个问题已经可以解出来了
 
