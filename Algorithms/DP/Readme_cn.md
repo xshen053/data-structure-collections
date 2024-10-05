@@ -22,6 +22,9 @@ dp问题解题5步法
 还有一个分类：
 - dp弄出来之后，有些题目返回的并不是一个状态的值，而是所有状态中的max或者min
 - 所以你就需要遍历所有dp，比如longest palindrome subsequence
+- 还有124 binary tree maximum path sum
+
+
 
 
 
