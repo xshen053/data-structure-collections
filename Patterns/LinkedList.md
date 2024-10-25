@@ -1,0 +1,6 @@
+- pointer bookkeeping
+- reverse
+- cycle 
+- dummy head
+- multi pass
+- This problem matches the linked list traversal pattern. We need to traverse the entire linked list while selectively removing nodes with the target value val.
