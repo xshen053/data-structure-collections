@@ -1,7 +1,17 @@
-
-
+# 按data structure分类
 
 ## Table of Contents
+
+- [Topic 1: Arrays & Strings](#topic-1-arrays--strings)
+- [Topic 2: Lists](#topic-2-lists)
+- [Topic 3: Stacks & Queues](#topic-3-stacks--queues)
+- [Topic 4: Hash & Maps](#topic-4-hash--maps)
+- [Topic 5: Sorting Algorithms](#topic-5-sorting-algorithms)
+- [Topic 6: Trees](#topic-6-trees)
+- [Topic 7: Graphs (BFS & DFS)](#topic-7-graphs-bfs--dfs)
+- [Topic 8: Recursion](#topic-8-recursion)
+
+Graph
 
 - [lc 690. Employee Importance](https://leetcode.com/problems/employee-importance/)
 - [lc 130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
