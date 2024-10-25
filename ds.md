@@ -8,11 +8,12 @@
 - [Topic 4: Hash & Maps](#topic-4-hash--maps)
 - [Topic 5: Sorting Algorithms](#topic-5-sorting-algorithms)
 - [Topic 6: Trees](#topic-6-trees)
-- [Topic 7: Graphs (BFS & DFS)](#topic-7-graphs-bfs--dfs)
+- [Topic 7: Graphs (BFS & DFS)](#Graph)
 - [Topic 8: Recursion](#topic-8-recursion)
 
-Graph
+# Graph
 
+## Graph Traversals
 - [lc 690. Employee Importance](https://leetcode.com/problems/employee-importance/)
 - [lc 130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions/)
 - [lc 787. Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/)
@@ -21,3 +22,8 @@ Graph
 - [lc 733. Flood Fill](https://leetcode.com/problems/flood-fill/)
 - [lc 79. Word Search](https://leetcode.com/problems/word-search/)
 - [lc 997. Find the Town Judge](https://leetcode.com/problems/find-the-town-judge/)
+
+## Graph Representations
+- [lc 547. Number of Provinces](https://leetcode.com/problems/number-of-provinces/)
+- [lc 133. Clone Graph](https://leetcode.com/problems/clone-graph/)
+- [lc 841. Keys and Rooms](https://leetcode.com/problems/keys-and-rooms/)
