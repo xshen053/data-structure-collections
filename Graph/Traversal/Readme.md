@@ -10,15 +10,15 @@ DFS: Explore a neighbour's entire subgraph before moving on to the next
 neighbour is known as DFS
 
 # Graph Traversal
+
 - DFS preorder
 - DFS postorder
 - BFS
 
 # Tree Traversal
-- Preorder, inorder, postorder, level order (BFS)
 
+- Preorder, inorder, postorder, level order (BFS)
 
 One sentence:
 
 Tree is a special graph
-
