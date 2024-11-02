@@ -11,6 +11,15 @@
 - [Topic 7: Graphs (BFS & DFS)](#Graph)
 - [Topic 8: Recursion](#topic-8-recursion)
 
+# Lists
+
+- [lc 19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- [lc 92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
+- [lc 143. Reorder List](https://leetcode.com/problems/reorder-list/)
+- [lc 146. LRU Cache](https://leetcode.com/problems/lru-cache/)
+- [lc 203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
+- [lc 1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)
+
 # Stacks & Queues
 
 Codepath:
@@ -25,12 +34,19 @@ Codepath:
 
 Codepath:
 
+Warmup Problems
+Invert Binary Tree
+Symmetric tree
+Balanced Binary Tree
+
 - [lc 515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)
 - [lc 508. Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)
 - [lc 108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 - [lc 987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
 - [lc 814. Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/)
 - [lc 111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+
+所有这些题都是 dfs 的，懂了 dfs，就很好办
 
 # Graph
 
