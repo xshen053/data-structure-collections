@@ -13,12 +13,29 @@
 
 # Lists
 
-- [lc 19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
-- [lc 92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
-- [lc 143. Reorder List](https://leetcode.com/problems/reorder-list/)
+ll + math
+
+- 2. Add Two Numbers
+
+ll + other ds
+
 - [lc 146. LRU Cache](https://leetcode.com/problems/lru-cache/)
+
+ll + adjust pointers
+
+- [lc 92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/)
 - [lc 203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
 - [lc 1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)
+
+ll + find mid, nth
+
+- [lc 143. Reorder List](https://leetcode.com/problems/reorder-list/)
+- [lc 19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+
+ll + recursion
+
+- 430. Flatten a Multilevel Doubly Linked List
+- 21. Merge Two Sorted Lists
 
 # Stacks & Queues
 
@@ -47,6 +64,10 @@ Balanced Binary Tree
 - [lc 111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 
 所有这些题都是 dfs 的，懂了 dfs，就很好办
+
+dfs + global max
+
+- 124. Binary Tree Maximum Path Sum
 
 # Graph
 
