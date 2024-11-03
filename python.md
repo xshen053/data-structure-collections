@@ -3,3 +3,14 @@
 https://interview-cheatsheet.streamlit.app/data_structures
 
 https://interview-cheatsheet.streamlit.app/build_in_functions
+
+# python 各个数据结构复习，要点
+
+- how ds are represented in python?
+
+- custom comparator?
+
+  - create a class to compare
+
+- sort?
+  - use lambda?
