@@ -14,3 +14,5 @@ https://interview-cheatsheet.streamlit.app/build_in_functions
 
 - sort?
   - use lambda?
+
+# 数据规模和时间复杂度的关系

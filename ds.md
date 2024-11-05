@@ -27,8 +27,9 @@ ll + adjust pointers
 - [lc 203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
 - [lc 1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/)
 
-ll + find mid, nth
+ll + find mid, kth + reverse
 
+- [lc 25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/)
 - [lc 143. Reorder List](https://leetcode.com/problems/reorder-list/)
 - [lc 19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 
