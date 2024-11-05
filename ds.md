@@ -56,8 +56,6 @@ Invert Binary Tree
 Symmetric tree
 Balanced Binary Tree
 
-- [lc 515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)
-- [lc 508. Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)
 - [lc 108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
 - [lc 987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
 - [lc 814. Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/)
@@ -65,9 +63,14 @@ Balanced Binary Tree
 
 所有这些题都是 dfs 的，懂了 dfs，就很好办
 
+bfs
+
+- [lc 515. Find Largest Value in Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row/)
+
 dfs + global max
 
-- 124. Binary Tree Maximum Path Sum
+- [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/)
+- [508. Most Frequent Subtree Sum](https://leetcode.com/problems/most-frequent-subtree-sum/)
 
 # Graph
 
