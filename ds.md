@@ -34,8 +34,8 @@ ll + find mid, nth
 
 ll + recursion
 
-- 430. Flatten a Multilevel Doubly Linked List
-- 21. Merge Two Sorted Lists
+- [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+- [430. Flatten a Multilevel Doubly Linked List](https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/)
 
 # Stacks & Queues
 
