@@ -1,8 +1,8 @@
-- [x] find mid -[ ] find kth node
-
-- reverse list
-- recursion
-- dummy node, iterate 从 it 还是 dummy?
+- [x] find mid
+- [ ] find kth node
+- [ ] reverse list
+- [ ] recursion
+- [ ] dummy node, iterate 从 it 还是 dummy?
 
 # find mid
 
