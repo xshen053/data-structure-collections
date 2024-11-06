@@ -17,6 +17,14 @@ https://interview-cheatsheet.streamlit.app/build_in_functions
 
 ## stacks
 
+```Python
+stack = []
+stack.append(1)    # Push 1 onto the stack
+stack.append(2)    # Push 2 onto the stack
+print(stack.pop()) # Pop (removes and returns 2)
+print(stack.pop()) # Pop (removes and returns 1)
+```
+
 ## queue
 
 ```Python
@@ -50,9 +58,14 @@ my_set = {"apple", "banana", "cherry"}
 print("banana" in my_set)  # Uses hash of "banana" for fast lookup
 
 # iterate dict
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+for key in my_dict:
+    print(key)
 
-
-#
+# Iterating Over a Set
+my_set = {1, 2, 3, 4, 5}
+for element in my_set:
+    print(element)
 ```
 
 ## heap
@@ -100,12 +113,6 @@ class Solution:
 
 
 ```
-
-- how ds are represented in python?
-
-- custom comparator?
-
-  - create a class to compare
 
 - sort?
   - use lambda?
