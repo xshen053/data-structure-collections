@@ -72,11 +72,11 @@ for element in my_set:
 
 ```Python
 '''
-	•	heapq.heapify(list): Convert a list into a heap in-place.
-	•	heapq.heappush(heap, item): Add an item to the heap.
-	•	heapq.heappop(heap): Remove and return the smallest item.
-	•	heapq.heapreplace(heap, item): Pop the smallest item, then push a new item.
-	•	heapq.heappushpop(heap, item): Push a new item, then pop the smallest item.
+heapq.heapify(list): Convert a list into a heap in-place.
+heapq.heappush(heap, item): Add an item to the heap.
+heapq.heappop(heap): Remove and return the smallest item.
+heapq.heapreplace(heap, item): Pop the smallest item, then push a new item.
+heapq.heappushpop(heap, item): Push a new item, then pop the smallest item.
 '''
 import heapq
 
