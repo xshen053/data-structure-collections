@@ -1,5 +1,5 @@
-- find mid
-- find kth node
+-[x] find mid -[ ] find kth node
+
 - reverse list
 - recursion
 - dummy node, iterate 从 it 还是 dummy?
