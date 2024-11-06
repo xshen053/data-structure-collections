@@ -114,7 +114,61 @@ class Solution:
 
 ```
 
-- sort?
-  - use lambda?
+## Sort
+
+```Python
+# Example: Sort a list of tuples by the second element
+data = [(1, 'banana'), (3, 'apple'), (2, 'cherry')]
+sorted_data = sorted(data, key=lambda x: x[1])
+print(sorted_data) # Output: [(3, 'apple'), (1, 'banana'), (2, 'cherry')]
+
+# sort with a custom key
+data = [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 20}]
+data.sort(key=lambda x: x['age'])
+print(data)
+
+# sort in descending order
+numbers = [4, 1, 3, 2]
+sorted_numbers = sorted(numbers, reverse=True)
+print(sorted_numbers)
+
+# Custom Sort with Multiple Criteria
+# Example: Sort by age, then by name alphabetically
+data = [{'name': 'Alice', 'age': 25}, {'name': 'Bob', 'age': 20}, {'name': 'Charlie', 'age': 20}]
+data.sort(key=lambda x: (x['age'], x['name']))
+print(data)
+
+# custom sort
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __lt__(self, other):
+        return self.age < other.age  # Sort by age
+
+people = [Person('Alice', 25), Person('Bob', 20)]
+sorted_people = sorted(people)
+for person in sorted_people:
+    print(person.name, person.age)
+'''
+Output
+- Bob 20
+- Alice 25
+'''
+```
 
 # 数据规模和时间复杂度的关系
+
+| 数据规模 | 时间复杂度 | 算法举例   |
+| -------- | ---------- | ---------- | ------------------------------------- |
+| 1        | 10         | O(n!)      | 排列 permutation                      |
+| 2        | 20~30      | O(2^n)     | 组合 combination                      |
+| 3        | 50         | O(n^4)     | DFS 搜索, DP 动态规划                 |
+| 4        | 100        | O(n^3)     | 任意两点最短路径, DP 动态规划         |
+| 5        | 1000       | O(n^2)     | 稠密图, DP 动态规划                   |
+| 6        | 10^6       | O(n log n) | 排序, 堆, 递归与分治                  |
+| 7        | 10^7       | O(n)       | DP 动态规划, 图遍历, 拓扑排序, 树遍历 |
+| 8        | 10^9       | O(sqrt(n)) | 质数数, 求平方根                      |
+| 9        | 10^10      | O(log n)   | 二分搜索                              |
+| 10       | +∞         | O(1)       | 数学相关算法                          |
