@@ -91,9 +91,9 @@ class Word:
         self._key = key
         self._freq = freq
     def __lt__(self, other):
-      '''
-        @return True if self should be considered “less than” other.
-      '''
+        '''
+          @return True if self should be considered “less than” other.
+        '''
         if self._freq == other._freq:
             return self._key > other._key
         else:
