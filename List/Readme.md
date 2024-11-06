@@ -1,4 +1,4 @@
--[x] find mid -[ ] find kth node
+- [x] find mid -[ ] find kth node
 
 - reverse list
 - recursion
