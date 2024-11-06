@@ -48,6 +48,14 @@ Codepath:
 - [lc 232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
 - [lc 933. Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)
 
+queue （抽象）
+
+- [1823. Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/)
+
+> 这题为什么用 queue
+
+- 我们访问这些元素的顺序是按照 queue 的顺序访问的，然后我们想要维持它们的 order，先进先出
+
 # Trees
 
 Codepath:
