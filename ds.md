@@ -56,6 +56,22 @@ queue （抽象）
 
 - 我们访问这些元素的顺序是按照 queue 的顺序访问的，然后我们想要维持它们的 order，先进先出
 
+## priority queue
+
+same pattern
+
+> managing frequencies and reducing counts in a way that maintains a specific structure
+
+- [358. Rearrange String k Distance Apart](https://leetcode.com/problems/rearrange-string-k-distance-apart/)
+- [621. Task Scheduler](https://leetcode.com/problems/task-scheduler/)
+- [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
+- [767. Reorganize String](https://leetcode.com/problems/reorganize-string/)
+- [1054. Distant Barcodes](https://leetcode.com/problems/distant-barcodes/)
+- [1647. Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/)
+- [2182. Construct String With Repeat Limit](https://leetcode.com/problems/construct-string-with-repeat-limit/)
+- [2914. Minimum Number of Changes to Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful/)
+- [amazon: getMinimumFruit](https://github.com/xshen053/OA/blob/main/amazon/intern/GetMininumFruit.py)
+
 # Trees
 
 Codepath:
