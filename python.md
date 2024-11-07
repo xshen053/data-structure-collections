@@ -13,7 +13,7 @@ https://interview-cheatsheet.streamlit.app/data_structures
 
 https://interview-cheatsheet.streamlit.app/build_in_functions
 
-# python 各个数据结构复习，要点
+# python 各个数据结构复习
 
 ## stacks
 
@@ -172,3 +172,53 @@ Output
 | 10^9     | O(sqrt(n)) | 质数数, 求平方根                      |
 | 10^10    | O(log n)   | 二分搜索                              |
 | +inf     | O(1)       | 数学相关算法                          |
+
+# Python built-in function
+
+## String Manipulation
+
+```Python
+# Example: Initializing a string
+text = "Hello, World!"
+
+# Example: Converting to uppercase
+upper_text = text.upper()  # returns "HELLO, WORLD!"
+
+# Example: Converting to lowercase
+lower_text = text.lower()  # returns "hello, world!"
+
+# Example: Replacing a substring
+replaced_text = text.replace("World", "Python")  # returns "Hello, Python!"
+
+# Example: Splitting a string into a list
+words = text.split(", ")  # returns ["Hello", "World!"]
+
+# Example: Joining a list into a string
+joined_text = " - ".join(words)  # returns "Hello - World!"
+
+# Example: Checking if a string starts with a substring
+starts_with_hello = text.startswith("Hello")  # returns True
+
+# Example: Checking if a string ends with a substring
+ends_with_exclamation = text.endswith("!")  # returns True
+
+# Example: Stripping whitespace from a string
+whitespace_text = "   Hello, World!   "
+stripped_text = whitespace_text.strip()  # returns "Hello, World!"
+```
+
+## Strip Operations
+
+```Python
+# Example: Strip whitespace from both ends
+stripped = "   hello   ".strip()  # Output: 'hello'
+
+# Example: Strip specific characters
+stripped_chars = "---hello---".strip('-')  # Output: 'hello'
+
+# Example: Strip only leading whitespace
+leading_strip = "   hello".lstrip()  # Output: 'hello'
+
+# Example: Strip only trailing whitespace
+trailing_strip = "hello   ".rstrip()  # Output: 'hello'
+```
