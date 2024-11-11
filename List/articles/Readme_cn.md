@@ -12,7 +12,7 @@
 
 通过一个不变量`new_head`，交替更新当前节点和`new_head`指向的值
 
-![alt text](imgs/ll-1.jpg)
+![alt text](../imgs/ll-1.jpg)
 
 ### sub linked list 反转
 
@@ -21,7 +21,7 @@
 - `old_head`总是指向 sub list 之后的第一个节点
 - `prev`总是指向 new head
 
-![alt text](imgs/ll-2.jpg)
+![alt text](../imgs/ll-2.jpg)
 
 ## 简单遍历问题
 
