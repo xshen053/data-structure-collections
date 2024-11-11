@@ -22,3 +22,21 @@
 - `prev`总是指向 new head
 
 ![alt text](imgs/ll-2.jpg)
+
+## 简单遍历问题
+
+这是最为常见的一种模式，仅需遍历 1 个或 2 个链表，即可解决。
+不过始终记得用 dummy node 避免 edge case
+
+相关题目
+
+- leetcode 2
+- lc 21
+
+## 找到第 n 个节点
+
+我们只需用 2 个 pointer，间隔为 n - 1，然后当 fast pointer 走到最后一个节点的时候，slow pointer 的位置就为第 n 个节点
+
+相关题目
+
+- lc 19
