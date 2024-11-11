@@ -37,14 +37,74 @@ recursion 非常的直观
 def traverse(node):
   if not node:
     return
-  # preorder
-  traverse(node.left)
-  # inorder
-  traverse(node.right)
-  # postorder
+  # part 1
+  traverse(node.left) # part 2
+  # part 3
+  traverse(node.right) # part 4
+  # part 5 （和part1 node.val是一样的，只是位置不同）
 ```
 
 iteration，可以把 preorder 和 postorder 分成一类
+
+对于一个 fun call 如下（和上面 traverse 一样）
+
+```Python
+def func(cur):
+  func(a)
+  func(b)
+
+func(cur)
+```
+
+preorder 的执行顺序是
+cur -> a -> a.a -> a.a.a -> a.a.b -> a.b -> b
+
+这如果用 stack 表示，先进后出
+如果我们要确保 pop 的顺序是`a -> a.a -> a.a.a -> a.a.b -> a.b -> b`
+
+其实可以发现，我们只需保证 每一层的 b 在 a 前进 stack 即可。因此我们做一个 dry run
+
+```
+it1
+stack = [b, a]
+it2
+pop() => a
+stack = [b, a.b, a.a]
+it3
+pop() => a.a
+stack = [b, a.b, a.a.b, a.a.a]
+it4
+pop() => a.a.a
+stack = [b, a.b, a.a.b]
+it5
+pop() => a.a.b
+stack = [b, a.b]
+it6
+pop() => a.b
+stack = [b]
+it7
+pop() => b
+stack = []
+```
+
+> 总结：用 stack 模拟 fun recursion，其实需要做的是手动保存当前 level 的信息。stack append 顺序和 recursive function 的顺序相反
+
+### 如何用 preorder 推 postorder
+
+- step1：根据下面，我们知道，preorder 的访问顺序是 part1 -> part2 -> part4
+
+```Python
+def traverse(node):
+  if not node:
+    return
+  # part 1
+  traverse(node.left) # part 2
+  # part 3
+  traverse(node.right) # part 4
+  # part 5 （和part1 node.val是一样的，只是位置不同）
+```
+
+- step2: 在上面我们已经成功归纳了如何用手动 stack 表示 fun call stack。因此 iteration 的 preorder 为
 
 ```Python
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
@@ -62,6 +122,26 @@ iteration，可以把 preorder 和 postorder 分成一类
                 stack.append(cur.left)
 
         return res
+```
+
+- step3: 如果根据 recursion 的`traverse`，我们可以得出 postorder 的访问顺序是 part2 -> part4 -> part5。part5 其实就是 part1，所以即为 part2->part4->part1。如果能按照 part1->part4->part2 访问，然后 reverse 最后 list 的顺序，即为 postorder。而 part4 和 part2 交换顺序仅需交换进入 stack 的顺序即可。因此我们可以得到如下的代码
+
+```Python
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if not root:
+            return root
+
+        stack = [root]
+        res = []
+        while stack:
+            cur = stack.pop()
+            res.append(cur.val)
+            if cur.left:
+                stack.append(cur.left)
+            if cur.right:
+                stack.append(cur.right)
+
+        return res[::-1]
 ```
 
 inorder
@@ -95,6 +175,13 @@ inorder
 - 108. Convert Sorted Array to Binary Search Tree
 - 109. Convert Sorted List to Binary Search Tree
 - 110. Balanced Binary Tree
+
+> traversal + 维护 global 变量
+
+- 124. Binary Tree Maximum Path Sum
+- 543. Diameter of Binary Tree
+- 5. Longest Palindromic Substring
+- 300. Longest Increasing Subsequence
 
 > BFS
 
