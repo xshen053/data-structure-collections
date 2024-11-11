@@ -4,6 +4,11 @@
 
 ## 找中点问题
 
+- (important) slow 和 fast 从 head 开始而不是 dummy
+- 如果是 first middle，condition `while fast and fast.next and fast.next.next`
+- 如果是 second middle，condition: `while fast and fast.next`
+  - ![second middle](../imgs/ll-3.png)
+
 ## 链表反转问题
 
 链表反转，目前做下来，有 2 种题，1 种是整个链表反转，另 1 种是 sublist 反转
