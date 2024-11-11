@@ -1,3 +1,6 @@
+# Pattern
+
+- [x] linked list traversal
 - [x] find mid
 - [x] find kth node
 - [x] reverse list
@@ -68,6 +71,7 @@ class Solution:
 def reverseList(node):
     new_head = None
     it = node
+    # loop inv: new_head always point to new head
     while it:
         # save next node
         nxt = it.next
@@ -95,7 +99,7 @@ old_head = prev.next
 it = old_head.next
 
 # inv:
-# prev.next always points to new head after for loop
+# prev.next always points to new head
 # old_head.next always points to the first node after reversed list
 
 for _ in range(right - left):
