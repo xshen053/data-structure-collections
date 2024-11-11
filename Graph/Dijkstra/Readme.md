@@ -1,4 +1,5 @@
 # Classic Dijkstra
+
 > Use 743. Network Delay Time as an example to explain
 
 ```Python
@@ -37,9 +38,6 @@ class Solution:
         return max(distTo) if max(distTo) != float("inf") else -1
 ```
 
-
 # Reference
 
 https://docs.google.com/presentation/d/1UHAU4IgEPYO3AJKYANd8XN8VDw5KZlt86HMLm9mJyyY/edit#slide=id.g99cc41691_0_200
-
-

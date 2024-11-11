@@ -1,15 +1,16 @@
-# 一篇文章讲明白BFS
+# 一篇文章讲明白 BFS
 
-BFS是一种暴力的搜索方法，我们BFS了一个graph，那必然是遍历了所有的node。BFS了一个tree，那也是一样的。
+BFS 是一种暴力的搜索方法，我们 BFS 了一个 graph，那必然是遍历了所有的 node。BFS 了一个 tree，那也是一样的。
 
-所以复杂度很好考虑，就是和V和E有关。而所有题目，都会经历几个步骤
+所以复杂度很好考虑，就是和 V 和 E 有关。而所有题目，都会经历几个步骤
 
-1. 识别出题目是Graph或Tree representation（如果需要，则建图）
-2. 在图上进行BFS，这里根据不同的表示方法（adj list, adj matrix, edge set)有不同的复杂度
-3. bfs就是如下的模版，只是有几个地方不同题目不同，需要进行改动
+1. 识别出题目是 Graph 或 Tree representation（如果需要，则建图）
+2. 在图上进行 BFS，这里根据不同的表示方法（adj list, adj matrix, edge set)有不同的复杂度
+3. bfs 就是如下的模版，只是有几个地方不同题目不同，需要进行改动
 
 ## BFS 模版
-以547. Number of Provinces为例
+
+以 547. Number of Provinces 为例
 
 ```Python
                 # Place 1: bfs 这里入队
@@ -31,8 +32,8 @@ BFS是一种暴力的搜索方法，我们BFS了一个graph，那必然是遍历
 
 ```
 
-## BFS类型
+## BFS 类型
 
-1. adj matrix：找邻居node的条件在Place2处
-2. 2d matrix: 变成4 direction入队, Place2处变化
-3. 一般的 Tree: 也是place2，变成left和right node入队，并且不需要Place3的visited，因为没有parent节点，我们是一直往下遍历
+1. adj matrix：找邻居 node 的条件在 Place2 处
+2. 2d matrix: 变成 4 direction 入队, Place2 处变化
+3. 一般的 Tree: 也是 place2，变成 left 和 right node 入队，并且不需要 Place3 的 visited，因为没有 parent 节点，我们是一直往下遍历

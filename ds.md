@@ -83,6 +83,11 @@ Balanced Binary Tree
 
 所有这些题都是 dfs 的，懂了 dfs，就很好办
 
+bst problem
+
+- 285. Inorder Successor in BST
+- 510. Inorder Successor in BST II
+
 bst + binary search
 
 - [lc 108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)
