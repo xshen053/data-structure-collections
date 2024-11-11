@@ -87,6 +87,8 @@ pop() => b
 stack = []
 ```
 
+![tree-1](../imgs/tree-1.PNG)
+
 > 总结：用 stack 模拟 fun recursion，其实需要做的是手动保存当前 level 的信息。stack append 顺序和 recursive function 的顺序相反
 
 ### 如何用 preorder 推 postorder
@@ -159,6 +161,44 @@ inorder
             res.append(cur.val)
             cur = cur.right
         return res
+```
+
+### in, pre, post 的 iteration 统一写法
+
+其实根据下面的函数以及上面的总结，我们知道 stack 模拟 func call stack 只是顺序颠倒一下。所以我们启示可以把所有写法都统一
+
+```Python
+def traverse(node):
+  if not node:
+    return
+  # part 1
+  traverse(node.left) # part 2
+  # part 3
+  traverse(node.right) # part 4
+  # part 5 （和part1 node.val是一样的，只是位置不同）
+```
+
+> 统一的框架
+
+```Python
+if not root:
+    return []
+
+stack = [root]
+res = []
+while stack:
+    # 这里是
+    cur = stack.pop()
+    if isinstance(cur, int):
+        res.append(cur)
+        continue
+    # 这里是part 5的位置
+    if cur.right:
+        stack.append(cur.right) # part 4
+    stack.append(cur.val) # part 3
+    if cur.left:
+        stack.append(cur.left) # part 2
+    # 这里是part 1的位置
 ```
 
 ## 题型分析
