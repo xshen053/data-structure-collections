@@ -188,13 +188,12 @@ stack = [root]
 res = []
 while stack:
     # 这里可以想像成recursive函数，我们处在某一层的任意位置
-    # 可能是Part1,2,3,4,5的任意
+    # 默认的位置其实是part5
     cur = stack.pop()
     # 这里我们判断cur的类型，可以找到我们的值，加入到result中
     if isinstance(cur, int):
         res.append(cur)
         continue
-    # 这里是part 5的位置
     if cur.right:
         stack.append(cur.right) # part 4
     stack.append(cur.val) # part 3
