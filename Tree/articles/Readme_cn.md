@@ -187,20 +187,25 @@ if not root:
 stack = [root]
 res = []
 while stack:
-    # 这里可以想像成recursive函数，我们处在某一层的任意位置
-    # 默认的位置其实是part5
+    # 这里我们pop出来的东西是按照我们之前stack.append的顺序排列的
     cur = stack.pop()
     # 这里我们判断cur的类型，可以找到我们的值，加入到result中
     if isinstance(cur, int):
         res.append(cur)
         continue
+
+    # part5 operation的位置, postorder 这里stack.append(cur.val)
     if cur.right:
         stack.append(cur.right) # part 4
-    stack.append(cur.val) # part 3
+    # part 3: inorder 这里stack.append(cur.val)
     if cur.left:
         stack.append(cur.left) # part 2
-    # 这里是part 1的位置
+    # part 1: preorder 这里stack.append(cur.val)
 ```
+
+preorder : 124，转换为 iteration stack: 421，遍历到 part1 我们希望 res.append(cur,val)
+inorder: 234，转换为 iteration stack: 432，遍历到 part3 我们希望 res.append(cur.val)
+postorder: 245，转换为 iteration stack: 542，遍历到 part5，我们希望 res.append(cur.val)
 
 ## 题型分析
 
