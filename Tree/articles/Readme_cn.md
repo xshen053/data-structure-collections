@@ -165,7 +165,7 @@ inorder
 
 ### in, pre, post 的 iteration 统一写法
 
-其实根据下面的函数以及上面的总结，我们知道 stack 模拟 func call stack 只是顺序颠倒一下。所以我们启示可以把所有写法都统一
+其实根据下面的函数以及上面的总结，我们知道 stack 模拟 func call stack 只是顺序颠倒一下。所以我们其实可以把所有写法都统一
 
 ```Python
 def traverse(node):
@@ -187,8 +187,10 @@ if not root:
 stack = [root]
 res = []
 while stack:
-    # 这里是
+    # 这里可以想像成recursive函数，我们处在某一层的任意位置
+    # 可能是Part1,2,3,4,5的任意
     cur = stack.pop()
+    # 这里我们判断cur的类型，可以找到我们的值，加入到result中
     if isinstance(cur, int):
         res.append(cur)
         continue
