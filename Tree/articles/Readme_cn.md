@@ -203,8 +203,8 @@ while stack:
     # part 1: preorder 这里stack.append(cur.val)
 ```
 
-preorder : 124，转换为 iteration stack: 421，遍历到 part1 我们希望 res.append(cur,val)
-inorder: 234，转换为 iteration stack: 432，遍历到 part3 我们希望 res.append(cur.val)
+preorder : 124，转换为 iteration stack: 421，遍历到 part1 我们希望 res.append(cur,val)  
+inorder: 234，转换为 iteration stack: 432，遍历到 part3 我们希望 res.append(cur.val)  
 postorder: 245，转换为 iteration stack: 542，遍历到 part5，我们希望 res.append(cur.val)
 
 ## 题型分析
