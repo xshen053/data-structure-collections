@@ -103,7 +103,7 @@ dfs + recursion (classic)
 
 bfs/dfs + sorting
 
-这 2 题完全一样
+这 2 题基本完全一样
 
 - [lc 314. 314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/?envType=company&envId=facebook&favoriteSlug=facebook-three-months)
 - [lc 987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
