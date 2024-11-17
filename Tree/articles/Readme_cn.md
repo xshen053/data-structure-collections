@@ -234,3 +234,8 @@ postorder: 245，转换为 iteration stack: 542，遍历到 part5，我们希望
 - 102. Binary Tree Level Order Traversal
 - 103. Binary Tree Zigzag Level Order Traversal
 - 107. Binary Tree Level Order Traversal II
+
+> vertical traversal
+
+- [lc 314. 314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/?envType=company&envId=facebook&favoriteSlug=facebook-three-months)
+- [lc 987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
