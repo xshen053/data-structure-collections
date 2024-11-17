@@ -101,8 +101,11 @@ dfs + recursion (classic)
 - [lc 111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
 - [lc 814. Binary Tree Pruning](https://leetcode.com/problems/binary-tree-pruning/)
 
-dfs + sorting
+bfs/dfs + sorting
 
+这 2 题完全一样
+
+- [lc 314. 314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/description/?envType=company&envId=facebook&favoriteSlug=facebook-three-months)
 - [lc 987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/)
 
 dfs + global max
