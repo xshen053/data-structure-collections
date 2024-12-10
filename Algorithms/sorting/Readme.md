@@ -34,7 +34,6 @@ General strategy:
 - Starting with an empty output sequence.
 - Add each item from input, inserting into output at right point.
 
-
 For naive approach, if output sequence contains k items, worst cost to insert a single item is k.
 - Might need to move everything over.
 

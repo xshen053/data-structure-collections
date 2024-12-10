@@ -9,14 +9,13 @@ def sortArray(nums: list[int]) -> list[int]:
         # n = nums.length
         # invariant: 
         #   - [i, high] >= pivot
-        #   - [low + 1, i - 1] < pivot
         
         i = high + 1
         for j in range(high, low, -1):
             if arr[j] >= pivot:
                 i -= 1
                 arr[i], arr[j] = arr[j], arr[i]
-        
+        # 结束之后，因为知道[i, high] >= pivot，所以把pivot插到i-1的位置
         arr[low], arr[i - 1] = arr[i - 1], arr[low]
 
         # return the index of pivot
