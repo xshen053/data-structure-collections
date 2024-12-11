@@ -1,17 +1,15 @@
-- [Topic 1: Arrays & Strings](#topic-1-arrays--strings)
-- [Topic 2: Lists](#topic-2-lists)
-- [Topic 3: Stacks & Queues](#topic-3-stacks--queues)
-- [Topic 4: Hash & Maps](#topic-4-hash--maps)
-- [Topic 5: Sorting Algorithms](#topic-5-sorting-algorithms)
-- [Topic 6: Trees](#topic-6-trees)
-- [Topic 7: Graphs (BFS & DFS)](#Graph)
-- [Topic 8: Recursion](#topic-8-recursion)
-
 # python coding 指南
 
 https://interview-cheatsheet.streamlit.app/data_structures
 
 https://interview-cheatsheet.streamlit.app/build_in_functions
+# python built-in函数
+
+判断一个string的element是否为数字:
+`isdigit()`
+
+判断一个string的element是否为字母: `isalnum()`
+
 
 # python 各个数据结构复习
 
