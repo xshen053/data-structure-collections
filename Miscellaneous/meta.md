@@ -7,8 +7,11 @@
 
 # BFS
 
-## 普通BFS最短路径
+## BFS在tree上特性，天然从上到下，从左到右
 - [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)
+
+## 普通BFS最短路径
+
 - [1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
 
 # 区间问题
