@@ -7,7 +7,7 @@
 
 # BFS
 
- 普通BFS最短路径
+## 普通BFS最短路径
 - [314. Binary Tree Vertical Order Traversal](https://leetcode.com/problems/binary-tree-vertical-order-traversal/)
 - [1091. Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
 
@@ -43,18 +43,18 @@
 
 # DFS
 
- DFS + 维护全局变量
+## DFS + 维护全局变量
 - [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)
 - [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
 
- DFS 特殊的遍历（先右后左）
+## DFS 特殊的遍历（先右后左）
 - [199. Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/)
 
 # Hashing
 
- Hashmap记录状态
+## Hashmap记录状态
 - [1. Two Sum](https://leetcode.com/problems/two-sum/)
 - [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 
- 和Linked List配合
+## 和Linked List配合
 - [146. LRU Cache](https://leetcode.com/problems/lru-cache/)
