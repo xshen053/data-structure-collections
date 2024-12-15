@@ -1,8 +1,8 @@
-# stack
+# Stack
 - 227. Basic Calculator II
 - 71. Simplify Path
 
-# stack （存index）
+# Stack （存index）
 - [1249. Minimum Remove to Make Valid Parentheses]()
 
 # bfs
