@@ -5,11 +5,9 @@ https://interview-cheatsheet.streamlit.app/data_structures
 https://interview-cheatsheet.streamlit.app/build_in_functions
 # python built-in函数
 
-判断一个string的element是否为数字:
-`isdigit()`
+判断一个string的element是否为数字: `isdigit()`
 
 判断一个string的element是否为字母: `isalnum()`
-
 
 # python 各个数据结构复习
 
