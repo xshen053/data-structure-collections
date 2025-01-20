@@ -3,11 +3,12 @@
 https://interview-cheatsheet.streamlit.app/data_structures
 
 https://interview-cheatsheet.streamlit.app/build_in_functions
-# python built-in函数
 
-判断一个string的element是否为数字: `isdigit()`
+# python built-in 函数
 
-判断一个string的element是否为字母: `isalnum()`
+判断一个 string 的 element 是否为数字: `isdigit()`
+
+判断一个 string 的 element 是否为字母: `isalnum()`
 
 # python 各个数据结构复习
 
@@ -218,3 +219,11 @@ leading_strip = "   hello".lstrip()  # Output: 'hello'
 # Example: Strip only trailing whitespace
 trailing_strip = "hello   ".rstrip()  # Output: 'hello'
 ```
+
+## array 问题
+
+2d
+`a = [[0 for _ in range(9)] for _ in range(9)]`
+
+3d
+`a = [[[0 for _ in range(9)] for _ in range(9)] for _ in range(9)]`
