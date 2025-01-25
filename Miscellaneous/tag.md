@@ -5,9 +5,6 @@ Stack (Monotonic Stack)
 - [84. Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 - [456. 132 Pattern](https://leetcode.com/problems/132-pattern/description/)
 
-
-
-
 Dijkstra
 
 - [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/)

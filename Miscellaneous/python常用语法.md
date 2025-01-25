@@ -227,3 +227,10 @@ trailing_strip = "hello   ".rstrip()  # Output: 'hello'
 
 3d
 `a = [[[0 for _ in range(9)] for _ in range(9)] for _ in range(9)]`
+
+## 排序 zip 一起排序
+
+```Python
+    pair = [(p, s) for p, s in zip(position, speed)]
+    pair.sort(reverse=True)
+```
