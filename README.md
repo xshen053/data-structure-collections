@@ -41,3 +41,22 @@ This repo includes various common abstract data structures (ADT) and their imple
 - BFS
 - DFS
 - Dynamic Programming
+
+## 按照数据需求分类
+
+> input 对顺序无要求
+
+- list
+- set / map
+
+> input 顺序无要求，但需要考虑组合排列问题
+
+- set / map （把 set 看成袋子，里面拿球）
+
+> 当需要维护 input 的 order，比如 increasing，decreasing
+
+- heap (priority queue)
+  - insert O(logn)
+- ordered dict
+  - insert O
+-

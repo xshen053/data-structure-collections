@@ -234,3 +234,13 @@ trailing_strip = "hello   ".rstrip()  # Output: 'hello'
     pair = [(p, s) for p, s in zip(position, speed)]
     pair.sort(reverse=True)
 ```
+
+## sorted library in python
+
+```Python
+from sortedcontainers import SortedSet
+
+self.num_map = defaultdict(SortedSet)
+
+
+```
