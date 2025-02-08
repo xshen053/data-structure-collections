@@ -57,6 +57,10 @@ This repo includes various common abstract data structures (ADT) and their imple
 
 - heap (priority queue)
   - insert O(logn)
-- ordered dict
-  - insert O
--
+  - delete O(n)
+- ordereddict / orderedset （python 特有）
+  - insert O(logn)
+  - delete O(logn)
+- treeset / treemap
+  - insert O(logn)
+  - delete O(logn)
