@@ -6,6 +6,7 @@
 - [974. Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/)
 - [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum/)
 - [525. Contiguous Array](https://leetcode.com/problems/contiguous-array/)
+- [2364. Count Number of Bad Pairs](https://leetcode.com/problems/count-number-of-bad-pairs/description/?envType=daily-question&envId=2025-02-09)
 
 ## 题型 2
 

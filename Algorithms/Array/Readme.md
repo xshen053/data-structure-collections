@@ -8,3 +8,9 @@
 - 825. Friends Of Appropriate Ages
 - 997. Find the Town Judge
 - 2747. Count Zero Request Servers
+
+## 逻辑题
+
+- 1790
+- 3160
+- 2349

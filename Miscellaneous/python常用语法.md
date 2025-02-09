@@ -242,5 +242,4 @@ from sortedcontainers import SortedSet
 
 self.num_map = defaultdict(SortedSet)
 
-
 ```
