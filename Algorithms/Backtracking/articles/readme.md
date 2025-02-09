@@ -30,7 +30,6 @@ backtracking 伴随撤销状态的过程，dfs 不一定需要
 
 - 必须无序，拿球问题（set）
   - 46. permutations
-  -
 - 有序，（array）
 - 顺序无所谓（set，原 input）比如 word search
 
