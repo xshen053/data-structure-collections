@@ -1,3 +1,7 @@
+# 一文说明白 Trie
+
+Trie 像树一样，但是又有区别。区别在于，我们用一个 hashtable，key value pair 的结构来表示 tree
+
 # Why we need Trie
 
 - efficient prefix searching
