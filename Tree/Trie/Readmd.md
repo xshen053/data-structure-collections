@@ -1,6 +1,10 @@
 # 一文说明白 Trie
 
-Trie 像树一样，但是又有区别。区别在于，我们用一个 hashtable，key value pair 的结构来表示 tree
+Trie 像树一样，但是又有区别。区别在于，我们用一个 hashtable，key value pair 的结构来表示 tree。
+
+但是如何思考 parent 和 child 的关系。在 trie 中
+
+每一个 value 是 key 的 parent，key 是 value 的 parent
 
 # Why we need Trie
 
