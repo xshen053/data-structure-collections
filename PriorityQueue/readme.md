@@ -8,6 +8,8 @@
 
 我之前的盲区就是我在想，如果每个 iteration 都要 push，pop 所有的元素，那复杂度就上去了。但其实每一次可以 pop 对应的 iteration 就顺带往后延了一个。
 
+为什么 767 也能使用 cycle，因为它其实就等于题目加了个条件，interval 为 1，让你 organize string，所以和 621 是完全一样的题目
+
 ## python 操作
 
 ```Python
