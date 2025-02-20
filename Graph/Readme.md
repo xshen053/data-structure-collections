@@ -30,3 +30,10 @@ For interviews, it is vital to know
   - word break
 - case 2，一个 graph 的 dfs 共享
   - number of islands
+
+# graph 题型
+
+- Dijkstra
+- bellman-ford
+- MST: Kruskal 算法
+- spanning tree，union find
