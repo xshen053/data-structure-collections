@@ -23,3 +23,10 @@ For interviews, it is vital to know
 - how to implement a graph
 - basic graph traversals (BFS, DFS)
 - how to sort topologically the graph.
+
+# dfs visited 情况
+
+- case 1，每个 dfs 的 visited 是 local 的
+  - word break
+- case 2，一个 graph 的 dfs 共享
+  - number of islands

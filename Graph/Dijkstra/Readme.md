@@ -1,5 +1,11 @@
 # Classic Dijkstra
 
+## dijkstra 几个注意事项
+
+1. pq 维护的 distance 是 node 的全局 distance，而不是根据单条 edge 排序的
+2. visited 确保不会进行多余的计算
+3. 对于每一个当前 node，我们都会找到它到它 neighbour 的 shortest path。并不是根据 prev_node 来更新，每个 pq 里面的 distance 都是全局 smallest 的
+
 > Use 743. Network Delay Time as an example to explain
 
 ```Python
