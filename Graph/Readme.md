@@ -37,3 +37,18 @@ For interviews, it is vital to know
 - bellman-ford
 - MST: Kruskal 算法
 - spanning tree，union find
+
+## shortest path
+
+dfs 也可以解决 shortest path 问题，但它的问题是，它是暴力的解法，这并不是高效的。对于任何一个 node，我们都会探索它的 neighbour。
+
+而 Dijkstra 通过贪心的方法，确保 efficiency
+
+## BFS vs DFS
+
+- 什么情况适合 BFS
+- 什么情况适合 DFS
+
+##
+
+Dijkstra 就是一种加权的 bfs
