@@ -44,6 +44,19 @@ dfs 也可以解决 shortest path 问题，但它的问题是，它是暴力的�
 
 而 Dijkstra 通过贪心的方法，确保 efficiency
 
+bellman-ford 其实也是暴力的方法，但优点是
+
+- 检测负权图
+- 处理 negative weight 的最短路径
+
+实际应用
+
+- 货币套利
+- 互联网路由协议
+- 物流运输
+- 经济供应链优化
+- 科幻游戏中的时间悖论
+
 ## BFS vs DFS
 
 - 什么情况适合 BFS

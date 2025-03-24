@@ -1,38 +1,46 @@
 # Data-structure-collections
 
-This repo includes various common abstract data structures (ADT) and their implementation details using Java / Python.
+**TL,DR: 我们在思考“用什么数据结构”时，实际上是在思考“用什么 ADT”来解决问题。**
 
-# Difference between abstract data type and data structure
+```
+因为：
 
-- ADT: Describes the operations and properties (e.g., each node's left subtree contains only nodes with keys less than the node's key).
-- Data Structure: Only describe the structure (don't think about operations and properties),
-  - e.g. binary tree is a structure where each node points to left and right children
+ADT描述了接口和行为
+➡️ 你思考的是“我需要什么功能？”
+➡️ 比如：“我需要一个支持 插入 O(1)，查找 O(1) 的数据结构”
+➡️ 然后你想到了 HashMap 这个 ADT。
 
-## Data structure
+具体的数据结构只是实现方式
+➡️ HashMap 可以基于哈希表（常见）
+➡️ 也可以基于平衡树（红黑树，比如 C++ std::map）
+➡️ 这些是实现细节，在你“用”它的时候，你更多关注的是功能接口（抽象层面）
+```
 
-- Array: a linear data structure - elements are stored at a contiguous location
-- Linked List: a linear data structure - elements are not stored at a contiguous location
-- Binary Tree: a tree data structure in which each node has at most two children, referred to as the left child and the right child
-- Graph: a collection of nodes connected by edges
-- Hash Table: A data structure that uses a hash function to map keys to values (consider it as an array with a mechanism for efficient key-based access)
+## 从最底层的物理层出发
 
-## Abstract Data Type
+```
+物理结构
+├── 顺序存储（Array）
+└── 链式存储（Linked List）
 
-- List
-- Stack
-  - Monotonic stack
-- Queue
-  - Monotonic queue
-- Tree
-  - Binary Search Tree
-  - AVL Tree
-  - Red-Black Tree
-- Map
-  - Hash Map
-  - Tree Map
-- Graph
-- Heaps and Priority Queue
-- Disjoint Sets
+逻辑结构
+├── 线性结构（List, Stack, Queue）
+└── 非线性结构（Tree, Graph, Set）
+
+抽象数据类型（ADT）
+├── Stack / Queue / Deque / Priority Queue
+├── Map / Set
+└── Disjoint Set / Tree / Graph
+
+ADT: Describes the operations and properties (e.g., each node's left subtree contains only nodes with keys less than the node's key).
+
+具体实现
+├── 数组 / 链表 / 堆 / 哈希表 / 平衡树
+├── 并查集 / Trie
+└── 邻接表 / 邻接矩阵
+```
+
+所以其实物理层面，只有 2 种结构，array 和 linked list
 
 ## Algorithms
 
