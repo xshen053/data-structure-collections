@@ -25,3 +25,18 @@ dp 问题解题 5 步法
 - dp 弄出来之后，有些题目返回的并不是一个状态的值，而是所有状态中的 max 或者 min
 - 所以你就需要遍历所有 dp，比如 longest palindrome subsequence
 - 还有 124 binary tree maximum path sum
+
+## 固定最优子结构的定义（从 coding 角度简化）
+
+> 定义永远 dp(i)为 i...n 而不是 0...i
+
+这样对应所有的 call 就都是 dp(0)
+
+> 如果求 max, e.g. max(dp(i + 2), dp(i + 1)), 无效边界为-INF  
+> 如果求 min, e.g. min(dp(i + 2), dp(i + 1)), 无效边界为 INF
+
+## 经典题型 1: array 选或不选
+
+[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)  
+[322. coin change](https://leetcode.com/problems/coin-change/description/)  
+[416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/)
