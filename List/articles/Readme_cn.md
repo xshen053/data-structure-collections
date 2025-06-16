@@ -17,7 +17,10 @@
 
 通过一个不变量`new_head`，交替更新当前节点和`new_head`指向的值
 
-![alt text](../imgs/ll-1.jpg)
+> 下面方法不好
+> ![alt text](../imgs/ll-1.jpg)
+
+用 sublist 的也可以做
 
 ### sub linked list 反转
 
