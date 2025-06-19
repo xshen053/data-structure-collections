@@ -24,12 +24,10 @@
 
 ### sub linked list 反转
 
-通过 2 个不变量`old_head`和`prev`
-
-- `old_head`总是指向 sub list 之后的第一个节点
-- `prev`总是指向 new head
-
-![alt text](../imgs/ll-2.jpg)
+        # invariant: dummy.next永远指向反转之后正确的head
+        # invariant: it是反转之后的last node
+        # nxt是我们要开始反转的list的第一个node，前面的都反转过了
+        # 这里用的方法和II一样了
 
 ## 简单遍历问题
 

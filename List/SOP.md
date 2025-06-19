@@ -15,3 +15,9 @@
 - 2130. Maximum Twin Sum of a Linked List (也可以练习 reverse)
 - 2487. Remove Nodes From Linked List
 - 2807. Insert Greatest Common Divisors in Linked List （基本遍历）
+
+> ddl 类型
+
+- 146. LRU Cache
+- 716. Max Stack
+- 432. All O`one Data Structure
