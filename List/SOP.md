@@ -21,3 +21,4 @@
 - 146. LRU Cache
 - 716. Max Stack
 - 432. All O`one Data Structure
+- 1797. Design Authentication Manager （ll 法用来优化一个 func）

@@ -68,6 +68,8 @@
      66.9%
      Med.
 
+     - 关于 invariant 的题，这个非常关键
+
 158. Remove Nth Node From End of List
      48.9%
      Med.
@@ -88,6 +90,15 @@
      52.6%
      Med.
 
+     - 如果需要往前找的，就不能单链表了
+     - 思考 enqueue 和 dequeue 分别在 head 还是 tail 的位置
+     - dequeue 需要知道前一个 node 的位置，所以只能放在 head，这样，next 就是前一个 node
+     - 它的顺序和 linked list 顺序相反
+     - Out <---- In
+     - 1 -> 2 -> 3 -> xxx
+
+     - circular linked list 反而是最自然的实现 circular queue 的方法
+
 163. Palindrome Linked List
      55.8%
      Easy
@@ -96,6 +107,8 @@
      57.8%
      Med.
 
+     - 为什么可以用 ll 是因为维护一个有序链表，它的 currentTime 是递增的，和 LRU 比较像
+
 165. Rotate List
      39.9%
      Med.
@@ -103,6 +116,8 @@
 166. Design HashMap
      65.9%
      Easy
+
+     - 当复习一下 hash collision 实现 hashmap
 
 167. Sort List
      61.8%
@@ -152,6 +167,9 @@
      82.3%
      Med.
 
+     - 不需要一个个更新。。对啊，只需要把一个 node 连接到 next next 即可。。。
+     - 脑经急转弯，要对 linked list 的特性了解的清楚
+
 179. Flatten Binary Tree to Linked List
      68.5%
      Med.
@@ -159,6 +177,8 @@
 180. Design Browser History
      77.7%
      Med.
+
+     - TODO: 弄明白 stack 和 ddl 方法的区别
 
 181. Linked List Cycle II
      54.9%
@@ -195,6 +215,8 @@
 189. Swapping Nodes in a Linked List
      68.5%
      Med.
+
+     - 快慢指针
 
 190. Maximum Twin Sum of a Linked List
      81.5%
