@@ -25,6 +25,13 @@ dp 问题解题 5 步法
 - dp 弄出来之后，有些题目返回的并不是一个状态的值，而是所有状态中的 max 或者 min
 - 所以你就需要遍历所有 dp，比如 longest palindrome subsequence
 - 还有 124 binary tree maximum path sum
+- 还有 53. Maximum Subarray
+
+还有个分类：
+
+- dp 只是其中的一部分，而不是我们要求的
+- 42. Trapping Rain Water， `max_left[i] = min(max_left[i - 1], height[i - 1])`
+- 我们要求的 `res += max(min(max_right[i], max_left[i]) - height[i], 0)`
 
 ## 固定最优子结构的定义（从 coding 角度简化）
 
@@ -32,8 +39,25 @@ dp 问题解题 5 步法
 
 这样对应所有的 call 就都是 dp(0)
 
+有一类题是反过来的
+
+- amount coin change (其实正的也可以)，就是我现在手上的钱是 amount
+- maximum subarray （因为直觉上 dp(i)和 dp(i + 1) 压根没关系），除非你定义为从右往左的 subarray
+- 看你怎么定义了
+
 > 如果求 max, e.g. max(dp(i + 2), dp(i + 1)), 无效边界为-INF  
 > 如果求 min, e.g. min(dp(i + 2), dp(i + 1)), 无效边界为 INF
+> 如果要无影响的，边界设为 0
+
+```
+其实顺序反过来的
+我们直观思考就是，如果我今天买，我下一天卖会怎么样，再下一天卖会怎么样
+就类似链表反过来print一样，recursion就可以反过来，所以我们先考虑的是第n-1天卖买，然后返回给第n-2天
+
+第n-2天卖买，返回给第n-3天
+
+一般的结论就是，这种顺序为----->的，其实都可以用recursion反过来
+```
 
 ## 经典题型 1: array 选或不选
 

@@ -1,5 +1,11 @@
 # 一文说明白 linked list 问题
 
+思路就是
+
+- 找到总共需要哪些 pointers
+- 通过遍历记录这些 pointers
+- 然后进行操作
+
 链表的题目几种常见的 pattern
 
 ## 找中点问题
@@ -7,6 +13,7 @@
 - (important) slow 和 fast 从 head 开始而不是 dummy
 - 如果是 first middle，condition `while fast and fast.next and fast.next.next`
 - 如果是 second middle，condition: `while fast and fast.next`
+- 结束 while 之后 slow 就是中点
   - ![second middle](../imgs/ll-3.png)
 
 ## 链表反转问题
