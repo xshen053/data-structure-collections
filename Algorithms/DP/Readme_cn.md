@@ -59,8 +59,31 @@ dp 问题解题 5 步法
 一般的结论就是，这种顺序为----->的，其实都可以用recursion反过来
 ```
 
-## 经典题型 1: array 选或不选
+# 解法分析维度 1
+
+## 经典题型 1: array 每一个元素选或不选
 
 [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)  
 [322. coin change](https://leetcode.com/problems/coin-change/description/) (这里会超时)  
 [416. Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/)
+
+# 另一个维度分析
+
+## 题型 1: 问 max/min
+
+这类题一般会状态转移除了 dp(i+1)...之外，可能会+1，或者+arr[i]
+
+- 72. Edit Distance
+- 64. Minimum Path Sum
+- 120. Triangle
+- 1186. Maximum Subarray Sum with One Deletion
+- 32. Longest Valid Parentheses
+
+## 题型 2，问总共有几种方式
+
+这种一般状态转移不存在+1，一般就是 dp(i) = dp(i + 1) + dp(xxx)...
+
+- 62. Unique Paths
+- 63. Unique Paths II
+- 91. Decode Ways
+- 140. Word Break II

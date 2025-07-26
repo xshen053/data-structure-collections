@@ -106,7 +106,7 @@ File System:
 a good video given by inventor of red-black tree:  
 https://www.coursera.org/lecture/algorithms-part1/red-black-bsts-GZe13
 
-cs61b lab8:LLRB  
+cs61b lab8:LLRB
 https://fa23.datastructur.es/materials/lab/lab08/
 
 #### Summary

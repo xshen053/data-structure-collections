@@ -11,36 +11,36 @@ Just constantly swap 2 numbers until all elements are sorted
 
 ## Selection Sort
 
-Selection sorting N items: 
+Selection sorting N items:
+
 - Find the smallest item in the unsorted portion of the array.
 - Move it to the end of the sorted portion of the array.
 - Selection sort the remaining unsorted items.
 
 ## Heap Sort
 
-
-
 ## Merge Sort
 
-Top-Down merge sorting N items: 
+Top-Down merge sorting N items:
+
 - Split items into 2 roughly even pieces.
 - Mergesort each half (steps not shown, this is a recursive algorithm!)
 - Merge the two sorted halves to form the final result.
 
-
 ## Insertion Sort
 
-General strategy: 
+General strategy:
+
 - Starting with an empty output sequence.
 - Add each item from input, inserting into output at right point.
 
 For naive approach, if output sequence contains k items, worst cost to insert a single item is k.
+
 - Might need to move everything over.
 
-
 More efficient method:
-- Do everything in place using swapping.
 
+- Do everything in place using swapping.
 
 ## QuickSort
 
@@ -51,19 +51,23 @@ Similar to dutch national flag problem
             # Find a pivot
             pivot = arr[low]
             # n = nums.length
-            # invariant: 
+            # invariant:
             #   - [i, high] >= pivot
-            #   - [low + 1, i - 1] < pivot
-            
+            #   - [j + 1, i - 1] < pivot
+            #   - [low + 1, j] unchecked
+
+            # 将所有>=pivot的移到右边
             i = high + 1
             for j in range(high, low, -1):
                 if arr[j] >= pivot:
                     i -= 1
                     arr[i], arr[j] = arr[j], arr[i]
 
-            # now: 
-            # [i, high] >= pivot
-            # [low + 1, i - 1] < pivot
+            # now:
+            #   - [i, high] >= pivot
+            #   - [j + 1, i - 1] < pivot
+            #   - [low + 1, j] unchecked
+            # 把pivot移动到i-1的位置
             arr[low], arr[i - 1] = arr[i - 1], arr[low]
             # now:
             # [i - 1, high] >= pivot
@@ -71,7 +75,7 @@ Similar to dutch national flag problem
 
             # return the index of pivot
             return i - 1
-                
+
         def quickSort(arr, low, high):
             if low < high:
                 pi = partition(arr, low, high)
@@ -79,4 +83,24 @@ Similar to dutch national flag problem
                 quickSort(arr, pi + 1, high)
 ```
 
+## QuickSort2
 
+```Python
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        def quick_sort(nums):
+            if len(nums) < 2:
+                return nums
+            pivot = random.choice(nums)
+            left, mid, right = [], [], []
+            # partition
+            for num in nums:
+                if num < pivot:
+                    left.append(num)
+                elif num > pivot:
+                    right.append(num)
+                else:
+                    mid.append(num)
+            return quick_sort(left) + mid + quick_sort(right)
+        return quick_sort(nums)
+```

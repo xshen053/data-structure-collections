@@ -23,13 +23,14 @@ BFS 是一种暴力的搜索方法，我们 BFS 了一个 graph，那必然是�
                     for _ in range(size):
                         cur_node = queue.popleft()
                         # Place 2: 这里下面决定遍历哪些元素，以及这些元素要不要入队的condition，不同题目不同
+                        # #################
                         for j in range(n):
                             if isConnected[cur_node][j] == 1 and j not in visited:
+                        # #################
                                 queue.append(j)
                                 # Place 3: bfs入队之后就要标记，用visited标记
                                 visited.add(j)
         return count
-
 ```
 
 ## BFS 类型
