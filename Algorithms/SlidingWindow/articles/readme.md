@@ -65,6 +65,7 @@ for r in range(n):
 ### window size 为 k，求的不是 window 的 length，而是 window 中其他的属性
 
 - 239 Sliding Window Maximum（求 k window 中的 max 值）
+- 1423 Maximum Points You Can Obtain from Cards（求某个 window 的 minimum sum，但转换和上面 1658 一样）
 
 > 逻辑也是完全一样的
 
