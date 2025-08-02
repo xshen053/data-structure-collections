@@ -2,7 +2,7 @@
 
 > 以 amazon 题单为例总结
 
-## 中位数类题目
+## 中位数 median array 类题目
 
 查看灵神题单有更详细总结
 
@@ -28,6 +28,10 @@ https://leetcode.cn/discuss/post/3579164/ti-dan-er-fen-suan-fa-er-fen-da-an-zui-
 
 1011. Capacity To Ship Packages Within D Days
 1012. Koko Eating Bananas
+1013. Maximum Tastiness of Candy Basket
+1014. Minimum Number of Days to Make m Bouquets
+1015. Find First and Last Position of Element in Sorted Array (last，<= 往右； first, >= 往左)
+1016. Search Insert Position (找最后一个 < target 的数，所以应该也是往右移动)
 
 > 这类题都是贪心
 
@@ -35,4 +39,19 @@ https://leetcode.cn/discuss/post/3579164/ti-dan-er-fen-suan-fa-er-fen-da-an-zui-
 
 如果找 minimum，那就是往左移，找 max 就是一直往右。while 条件没变化，都是`<=`
 
-##
+找 first 就是找 minimum，找 last 就是找 maximum
+
+## LIS 二分
+
+354. Russian Doll Envelopes
+355. Longest Increasing Subsequence
+
+> 用二分找到 LIS 中 first index 比现在大，替换
+
+## 中规中矩的二分，只是判断条件要改下
+
+540. Single Element in a Sorted Array
+
+## DP 2 分
+
+1751. Maximum Number of Events That Can Be Attended II
