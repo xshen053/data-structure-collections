@@ -24,8 +24,8 @@ for r in range(n):
   # 窗口不满足条件
   while()
 
-  # 这里满足条件
-  # 获得max length
+  # 这里满足条件（或若有其他附加条件if在这里check）
+  # 满足的话获得max length
 
 
 # min window
@@ -51,6 +51,8 @@ for r in range(n):
 
 - 1658 Minimum Operations to Reduce X to Zero（需转换为这种类型，其实就是求 maximum length）
 
+- 1838 Frequency of the Most Frequent Element （需转换，frequency 就是 window length)
+
 > 合法的 window 是在 while 之后的，while 说明窗口不合法
 > 所以计算长度是在 while 之后
 
@@ -61,11 +63,15 @@ for r in range(n):
 - 209. Minimum Size Subarray Sum（最小长度）
 
 > 合法窗口在 while 中
+> while 是满足条件的
 
 ### window size 为 k，求的不是 window 的 length，而是 window 中其他的属性
 
-- 239 Sliding Window Maximum（求 k window 中的 max 值）
-- 1423 Maximum Points You Can Obtain from Cards（求某个 window 的 minimum sum，但转换和上面 1658 一样）
+- 239 Sliding Window Maximum（求 k window 中的 max 元素值）
+- 1423 Maximum Points You Can Obtain from Cards（求某个 window 的 minimum sum window length: n - k，但转换和上面 1658 一样）
+- 2461 Maximum Sum of Distinct Subarrays With Length K（求 k window 的 max sum）
+- 30 Substring with Concatenation of All Words
+- 1456 Maximum Number of Vowels in a Substring of Given Length
 
 > 逻辑也是完全一样的
 
@@ -92,3 +98,16 @@ for r in range(n):
 因为 window 我们知道某个 window 的 size 为 n 之后，我们能推断出，这个 window 限制的所有 subarray 都为 at most n，
 但不能推断是否为 exactly n。而且我们是找所有 subarray，而不是一个，一个 window 通常只能代表一个 subarray。
 我们不能通过 sliding window 去除[old_l...r + 1], ... [old_l...n - 1]
+
+### 用 count 状态维护窗口
+
+- 76 Minimum Window Substring
+- 395 Longest Substring with At Least K Repeating Characters
+
+这 2 题都需要一些状态变量来确保 O(1)时间获得某些状态
+
+一个窗口本身需要一些变量来维护状态，比如一个 hashmap。但是还有些变量用来节省时间，我们不需要遍历 hashmap 就可以获得结果。
+
+### 26 个滑窗
+
+每一个你想检查的“条件”，都需要一个变量来维护
