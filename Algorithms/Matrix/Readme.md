@@ -65,3 +65,8 @@ x = len(matrix[0]) col
 ## union find
 
 1970. Last Day Where You Can Still Cross
+
+## 2D dp
+
+64. Minimum Path Sum  
+931. Minimum Falling Path Sum  
