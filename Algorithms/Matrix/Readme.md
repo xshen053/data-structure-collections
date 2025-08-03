@@ -19,20 +19,18 @@ x = len(matrix[0]) col
 
 200. Number of Islands  
 79. Word Search  
-417. Pacific Atlantic Water Flow（不过需要转换下思维，从哪里开始遍历更好）
+417. Pacific Atlantic Water Flow（不过需要转换下思维，从哪里开始遍历更好）  
+695. Max Area of Island
 
 > 这类题就是基本的bfs，dfs，考察搜索，只不过是在matrix上
 
-## matrix模拟
-
-54. Spiral Matrix  
-
-> 主要考察matrix边界问题
-
 ## 多源bfs
 
-994. Rotting Oranges  
+
+317. Shortest Distance from All Buildings  
 542. 01 Matrix  
+994. Rotting Oranges  
+
 
 > 新的思路，bfs的开始可以是多源的
 
@@ -40,20 +38,30 @@ x = len(matrix[0]) col
 
 36. Valid Sudoku （不需要backtracking，但思路和下面一样）  
 37. Sudoku Solver  
+980. Unique Paths III  
 
 > 在matrix上做backtracking
 
-## matrix旋转
+## 非算法题
 
 48. Rotate Image  
+54. Spiral Matrix  
+73. Set Matrix Zeroes  
+
+> 主要考察matrix边界问题
+
+## binary search
+
+74. Search a 2D Matrix
 
 
 
+## max rectangle 类型题目
+
+84. Largest Rectangle in Histogram  （这题不是matrix的，但可以作为参考）
+85. Maximal Rectangle  
 
 
+## union find
 
-
-
-
-
-
+1970. Last Day Where You Can Still Cross
