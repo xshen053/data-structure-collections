@@ -55,7 +55,6 @@ x = len(matrix[0]) col
 74. Search a 2D Matrix
 
 
-
 ## max rectangle 类型题目
 
 84. Largest Rectangle in Histogram  （这题不是matrix的，但可以作为参考）
