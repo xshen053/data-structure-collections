@@ -51,3 +51,8 @@ heapq.heappop(pq)
 ### Subarray + pq
 
 2163. Minimum Difference in Sums After Removal of Elements
+
+## TODO
+
+- pq配贪心的题目，为什么要用pq 1353, 2402
+
