@@ -18,3 +18,36 @@ heapq.heappush(pq, value)
 heapq.heappop(pq)
 
 ```
+
+## 题型分析
+
+### 根据字符频率，O(1)获取最大频率的letter
+
+767. Reorganize String
+
+### topk
+
+347. Top K Frequent Elements  
+23. Merge k Sorted Lists  
+215. Kth Largest Element in an Array  
+658. Find K Closest Elements
+
+### O(1)获取global最小end
+
+253. Meeting Rooms II
+
+### 两个heap结合
+
+295. Find Median from Data Stream
+
+### Pq + Greedy
+
+1353. Maximum Number of Events That Can Be Attended
+
+### Sliding window sortedDict和heap两种方法
+
+1438. Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit  
+
+### Subarray + pq
+
+2163. Minimum Difference in Sums After Removal of Elements

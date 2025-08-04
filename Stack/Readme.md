@@ -2,12 +2,14 @@
 
 > 以amazon题单为例
 
-
 ## 利用stack特性，撤销
 20. Valid Parentheses  
 71. Simplify Path  
 394. Decode String  
-
+224. Basic Calculator  
+227. Basic Calculator II
+772. Basic Calculator III  
+150. Evaluate Reverse Polish Notation（逆波兰表达式）
 > 了解stack特性
 
 ## 单调栈
@@ -18,6 +20,8 @@
 503. Next Greater Element II  
 
 1081. Smallest Subsequence of Distinct Characters （比大小的是字母）
+
+155. Min Stack
 
 ## 用stack模拟recursion遍历tree
 173. Binary Search Tree Iterator  
@@ -39,4 +43,9 @@
                 else:
                     break
 ```
+
+
+TODO
+
+stack有点恶心
 
