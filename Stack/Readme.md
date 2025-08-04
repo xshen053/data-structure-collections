@@ -44,8 +44,14 @@
                     break
 ```
 
+## TODO
 
-TODO
+- 计算器 I,II,III
+- largest rectangle 84,85
+- tree的stack iteration遍历
+- 抵消的技巧，844
+- 单调栈
 
-stack有点恶心
+
+
 
