@@ -57,7 +57,7 @@
 - 链表问题
 - 荷兰国旗（ Array Partitioning问题）
 - 和binary search有关的查找min，max类型（1对n关系）
-- 字符串匹配问题
+- 字符串匹配问题（结合kmp等算法）
 
 
 ### build intution 给每一个题
