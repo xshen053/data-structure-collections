@@ -23,6 +23,8 @@
 ## array技巧
 26. Remove Duplicates from Sorted Array  
 31. Next Permutation  
+556. Next Greater Element III (和上面31同一题)
+75. Sort Colors  （partition类型）
 80. Remove Duplicates from Sorted Array II  
 88. Merge Sorted Array  
 151. Reverse Words in a String  
@@ -34,11 +36,22 @@
 
 ## 链表系列
 19. Remove Nth Node From End of List  
+61. Rotate List  
 141. Linked List Cycle  
 142. Linked List Cycle II  
+148. Sort List  
 234. Palindrome Linked List（kudos, 5分钟解决了 using constant space）  
 443. String Compression (也不难，第一次就解决了，6分钟！太棒了！)
+
+## sorting有关的题目
+148. Sort List  （merge sort）
+475. Heaters （和二分相关）
+
 
 ### 总结
 
 - 接雨水系列
+
+### build intution 给每一个题
+
+
