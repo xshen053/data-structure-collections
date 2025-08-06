@@ -7,7 +7,6 @@
 42. Trapping Rain Water  
 11. Container With Most Water  
 
-
 ## 字符串对称中心扩散
 
 5. Longest Palindromic Substring
@@ -30,7 +29,9 @@
 151. Reverse Words in a String  
 167. Two Sum II - Input Array Is Sorted  
 189. Rotate Array （这个就像reverse words，一样，先reverse全部，再每个reverse）
-287. Find the Duplicate Number  （链表找环）
+287. Find the Duplicate Number  （链表找环）  
+443. String Compression (也不难，第一次就解决了，6分钟！太棒了！)
+
 
 > 在array上操作，主要考察边界，没其他技巧
 
@@ -41,7 +42,6 @@
 142. Linked List Cycle II  
 148. Sort List  
 234. Palindrome Linked List（kudos, 5分钟解决了 using constant space）  
-443. String Compression (也不难，第一次就解决了，6分钟！太棒了！)
 
 ## sorting有关的题目
 148. Sort List  （merge sort）
@@ -51,6 +51,14 @@
 ### 总结
 
 - 接雨水系列
+- array 覆盖重写系列
+- n sum问题
+- next permutation这个是算术问题配合2 pointers实现
+- 链表问题
+- 荷兰国旗（ Array Partitioning问题）
+- 和binary search有关的查找min，max类型（1对n关系）
+- 字符串匹配问题
+
 
 ### build intution 给每一个题
 
