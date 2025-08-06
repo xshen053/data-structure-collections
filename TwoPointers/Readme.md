@@ -26,7 +26,8 @@
 80. Remove Duplicates from Sorted Array II  
 88. Merge Sorted Array  
 151. Reverse Words in a String  
-167. Two Sum II - Input Array Is Sorted
+167. Two Sum II - Input Array Is Sorted  
+189. Rotate Array （这个就像reverse words，一样，先reverse全部，再每个reverse）
 287. Find the Duplicate Number  （链表找环）
 
 > 在array上操作，主要考察边界，没其他技巧
