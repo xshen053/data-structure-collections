@@ -58,3 +58,8 @@ https://leetcode.cn/discuss/post/3579164/ti-dan-er-fen-suan-fa-er-fen-da-an-zui-
 
 1751. Maximum Number of Events That Can Be Attended II  
 
+## 总结
+- 中位数median array类题目（TODO）
+- 可可吃香蕉
+- 找peak
+- LIS 二分
