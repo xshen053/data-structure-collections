@@ -60,3 +60,9 @@
 ## ****sorting + hashtable的题（需要特别关注）
 1152. Analyze User Website Visit Pattern
 
+
+## 比较复杂的题
+
+3134. Find the Median of the Uniqueness Array（中位数题）  
+460. LFU Cache  （LFU）
+815. Bus Routes（bfs，奇怪的图）
