@@ -54,6 +54,9 @@
 ## hash table随机化
 380. Insert Delete GetRandom O(1)  
 
+## hash table + bfs
+752. Open the Lock  
+
 ## ****sorting + hashtable的题（需要特别关注）
 1152. Analyze User Website Visit Pattern
 
