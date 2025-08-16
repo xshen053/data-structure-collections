@@ -6,37 +6,8 @@ sliding window 是基于 brute force 的优化。原因就是，窗口中的状�
 
 因为 right 再往右移动，arr[old_l, right + 1...] 全都是无效的
 
-# post-iteration check
-
-这种 for 循环的题很容易碰到 post-iteration check
-
-两种解决方案
-
-1. 之后再检查一次最后的情况
-2. for 循环用 len(s) + 1，这样直接在 for 里面解决
-
-其实都可以在 for 里面做的，可以针对性的练习，之前也碰到过很多这样的题
-
-```Python
-
-# max window
-for r in range(n):
-  # 窗口不满足条件
-  while()
-
-  # 这里满足条件（或若有其他附加条件if在这里check）
-  # 满足的话获得max length
-
-# min window
-for r in range(n):
-  # 窗口满足条件
-  while:
-    # 这里满足条件
-    # 获得min length
-
-  # 这里不满足
-
-```
+# SOP
+- 思考为什么我们可以跳过当前l..r之后的subarray，而直接换到l+1开始的新subarray
 
 ## 常见题型
 
@@ -58,6 +29,7 @@ for r in range(n):
 ### minimum window 长度
 
 - 76. Minimum Window Substring
+- 632. Smallest Range Covering Elements from K Lists（和76一样的）
 
 - 209. Minimum Size Subarray Sum（最小长度）
 
@@ -71,7 +43,9 @@ for r in range(n):
 - 2461 Maximum Sum of Distinct Subarrays With Length K（求 k window 的 max sum）
 - 30 Substring with Concatenation of All Words
 - 1456 Maximum Number of Vowels in a Substring of Given Length
+- 2461 Maximum Sum of Distinct Subarrays With Length K
 
+> invariant: k - 1 element ends in r - 1 (inclusive)
 > 逻辑也是完全一样的
 
 ### 替换
@@ -88,14 +62,17 @@ for r in range(n):
 
 维护 size 为 k 的窗口
 
-### at most （求 subarray 的数量满足某个条件）
+### at most, at least （求 subarray 的数量满足某个条件）
 
 - 992 Subarrays with K Different Integers（subarray 有 k 个不同 integers）
 - 930 Binary Subarrays With Sum（subarray 的和为 k）
   > 此类题目通常无法直接用 window 满足条件，而是用 at_most(n) - at_most(n - 1)
+- Uber OA 第4题，at least n pairs
 
-因为 window 我们知道某个 window 的 size 为 n 之后，我们能推断出，这个 window 限制的所有 subarray 都为 at most n，
-但不能推断是否为 exactly n。而且我们是找所有 subarray，而不是一个，一个 window 通常只能代表一个 subarray。
+> 每个窗口是l和r固定的结果。我们移动left是因为old_l 到所有right之后的subarray都已经被我们处理过
+
+
+> 因为 window 我们知道某个 window 的 size 为 n 之后，我们能推断出，这个 window 限制的所有 subarray 都为 at most n，但不能推断是否为 exactly n。而且我们是找所有 subarray，而不是一个，一个 window 通常只能代表一个 subarray。
 我们不能通过 sliding window 去除[old_l...r + 1], ... [old_l...n - 1]
 
 ### 用 count 状态维护窗口
@@ -116,10 +93,34 @@ for r in range(n):
 - 基础滑窗
 - 定长滑窗，入，进，出
 - word滑窗：30
-- at most 滑窗
-- 字符频率滑窗： 76，209
+- at most 滑窗（计数型：先加后收缩（Expand-then-Shrink））
+- 字符频率滑窗： 76，209（最优型：先收缩后加）
 - 区间滑窗3439
 
+## TODO
+- 3134. Find the Median of the Uniqueness Array
+- 2411. Smallest Subarrays With Maximum Bitwise OR（位运算）
 
+===
 
+✅ 一句话记忆
+
+计数型：可以先放进来，超了再赶走，（先加后收缩）
+最优型：不允许窗口不合法，必须先赶走再放进来（先收缩后加）
+
+第3题：窗口不合法则让它合法，然后我们记录max_length
+at_most：窗口不合法让它合法，然后记录所有subarray的数量  
+
+76. Minimum Window Substring
+
+窗口合法进入窗口，让窗口更小，直到不合法
+
+还是思考下本质
+- 窗口通过移动从不合法=>合法，r是不变的，变得是l
+  - 3
+  - at_most
+  - 这些都是为了让窗口合法，通过移动l，因为已经不合法，再移动r这段区间没有意义了
+- 一个合法的窗口，移动l获得最小的length
+
+===
 
