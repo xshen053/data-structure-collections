@@ -13,6 +13,8 @@ sliding window 是基于 brute force 的优化。原因就是，窗口中的状�
 
 > 以 amazon 题单为例
 
+![alt text](image.png)
+
 ### maximum window 长度
 
 - 3 Longest Substring Without Repeating Characters（unique 元素）
@@ -30,7 +32,6 @@ sliding window 是基于 brute force 的优化。原因就是，窗口中的状�
 
 - 76. Minimum Window Substring
 - 632. Smallest Range Covering Elements from K Lists（和76一样的）
-
 - 209. Minimum Size Subarray Sum（最小长度）
 
 > 合法窗口在 while 中
