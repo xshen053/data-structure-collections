@@ -1,5 +1,8 @@
 # 前缀和题目
 
+
+![alt text](image.png)
+
 ## 题型 1，利用 dict
 
 - [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
